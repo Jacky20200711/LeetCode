@@ -20,6 +20,6 @@ Assert.AreEqual(701, testClass.TitleToNumber("ZY"));
 Assert.AreEqual(2147483647, testClass.TitleToNumber("FXSHRXW"));  
 
 # 提交結果  
-![image](https://github.com/Jacky20200711/LeetCodeWithUnitTest/blob/master/Q171(Excel Sheet Column Number)/SuccessShot.PNG?raw=true)
+![image](https://raw.githubusercontent.com/Jacky20200711/LeetCodeWithUnitTest/master/Q171(Excel%20Sheet%20Column%20Number)/SuccessShot.PNG)
 &emsp;
 &emsp;
