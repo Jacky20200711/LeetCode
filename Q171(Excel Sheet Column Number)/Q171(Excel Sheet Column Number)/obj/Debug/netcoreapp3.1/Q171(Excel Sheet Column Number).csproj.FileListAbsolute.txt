@@ -1,0 +1,13 @@
+D:\Desktop\Q171(Excel Sheet Column Number)\obj\Debug\netcoreapp3.1\Q171(Excel Sheet Column Number).csprojAssemblyReference.cache
+D:\Desktop\Q171(Excel Sheet Column Number)\obj\Debug\netcoreapp3.1\Q171(Excel Sheet Column Number).AssemblyInfoInputs.cache
+D:\Desktop\Q171(Excel Sheet Column Number)\obj\Debug\netcoreapp3.1\Q171(Excel Sheet Column Number).AssemblyInfo.cs
+D:\Desktop\Q171(Excel Sheet Column Number)\obj\Debug\netcoreapp3.1\Q171(Excel Sheet Column Number).csproj.CoreCompileInputs.cache
+D:\Desktop\Q171(Excel Sheet Column Number)\bin\Debug\netcoreapp3.1\Q171(Excel Sheet Column Number).exe
+D:\Desktop\Q171(Excel Sheet Column Number)\bin\Debug\netcoreapp3.1\Q171(Excel Sheet Column Number).deps.json
+D:\Desktop\Q171(Excel Sheet Column Number)\bin\Debug\netcoreapp3.1\Q171(Excel Sheet Column Number).runtimeconfig.json
+D:\Desktop\Q171(Excel Sheet Column Number)\bin\Debug\netcoreapp3.1\Q171(Excel Sheet Column Number).runtimeconfig.dev.json
+D:\Desktop\Q171(Excel Sheet Column Number)\bin\Debug\netcoreapp3.1\Q171(Excel Sheet Column Number).dll
+D:\Desktop\Q171(Excel Sheet Column Number)\bin\Debug\netcoreapp3.1\Q171(Excel Sheet Column Number).pdb
+D:\Desktop\Q171(Excel Sheet Column Number)\obj\Debug\netcoreapp3.1\Q171(Excel Sheet Column Number).dll
+D:\Desktop\Q171(Excel Sheet Column Number)\obj\Debug\netcoreapp3.1\Q171(Excel Sheet Column Number).pdb
+D:\Desktop\Q171(Excel Sheet Column Number)\obj\Debug\netcoreapp3.1\Q171(Excel Sheet Column Number).genruntimeconfig.cache
