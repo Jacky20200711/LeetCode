@@ -1,0 +1,13 @@
+D:\Desktop\Q191(Number of 1 Bits)\bin\Debug\netcoreapp3.1\Q191(Number of 1 Bits).exe
+D:\Desktop\Q191(Number of 1 Bits)\bin\Debug\netcoreapp3.1\Q191(Number of 1 Bits).deps.json
+D:\Desktop\Q191(Number of 1 Bits)\bin\Debug\netcoreapp3.1\Q191(Number of 1 Bits).runtimeconfig.json
+D:\Desktop\Q191(Number of 1 Bits)\bin\Debug\netcoreapp3.1\Q191(Number of 1 Bits).runtimeconfig.dev.json
+D:\Desktop\Q191(Number of 1 Bits)\bin\Debug\netcoreapp3.1\Q191(Number of 1 Bits).dll
+D:\Desktop\Q191(Number of 1 Bits)\bin\Debug\netcoreapp3.1\Q191(Number of 1 Bits).pdb
+D:\Desktop\Q191(Number of 1 Bits)\obj\Debug\netcoreapp3.1\Q191(Number of 1 Bits).csprojAssemblyReference.cache
+D:\Desktop\Q191(Number of 1 Bits)\obj\Debug\netcoreapp3.1\Q191(Number of 1 Bits).AssemblyInfoInputs.cache
+D:\Desktop\Q191(Number of 1 Bits)\obj\Debug\netcoreapp3.1\Q191(Number of 1 Bits).AssemblyInfo.cs
+D:\Desktop\Q191(Number of 1 Bits)\obj\Debug\netcoreapp3.1\Q191(Number of 1 Bits).csproj.CoreCompileInputs.cache
+D:\Desktop\Q191(Number of 1 Bits)\obj\Debug\netcoreapp3.1\Q191(Number of 1 Bits).dll
+D:\Desktop\Q191(Number of 1 Bits)\obj\Debug\netcoreapp3.1\Q191(Number of 1 Bits).pdb
+D:\Desktop\Q191(Number of 1 Bits)\obj\Debug\netcoreapp3.1\Q191(Number of 1 Bits).genruntimeconfig.cache

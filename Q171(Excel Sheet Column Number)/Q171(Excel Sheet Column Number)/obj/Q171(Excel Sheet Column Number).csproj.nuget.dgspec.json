@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Desktop\\Q171(Excel Sheet Column Number)\\Q171(Excel Sheet Column Number).csproj": {}
+    "D:\\Desktop\\Project\\LeetCodeWithUnitTest\\Q171(Excel Sheet Column Number)\\Q171(Excel Sheet Column Number)\\Q171(Excel Sheet Column Number).csproj": {}
   },
   "projects": {
-    "D:\\Desktop\\Q171(Excel Sheet Column Number)\\Q171(Excel Sheet Column Number).csproj": {
+    "D:\\Desktop\\Project\\LeetCodeWithUnitTest\\Q171(Excel Sheet Column Number)\\Q171(Excel Sheet Column Number)\\Q171(Excel Sheet Column Number).csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desktop\\Q171(Excel Sheet Column Number)\\Q171(Excel Sheet Column Number).csproj",
+        "projectUniqueName": "D:\\Desktop\\Project\\LeetCodeWithUnitTest\\Q171(Excel Sheet Column Number)\\Q171(Excel Sheet Column Number)\\Q171(Excel Sheet Column Number).csproj",
         "projectName": "Q171(Excel Sheet Column Number)",
-        "projectPath": "D:\\Desktop\\Q171(Excel Sheet Column Number)\\Q171(Excel Sheet Column Number).csproj",
+        "projectPath": "D:\\Desktop\\Project\\LeetCodeWithUnitTest\\Q171(Excel Sheet Column Number)\\Q171(Excel Sheet Column Number)\\Q171(Excel Sheet Column Number).csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\Desktop\\Q171(Excel Sheet Column Number)\\obj\\",
+        "outputPath": "D:\\Desktop\\Project\\LeetCodeWithUnitTest\\Q171(Excel Sheet Column Number)\\Q171(Excel Sheet Column Number)\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
