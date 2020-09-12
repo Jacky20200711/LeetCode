@@ -1,7 +1,7 @@
 # 題目網址 & 題目簡述  
 https://leetcode.com/problems/excel-sheet-column-number/  
 
-A~Z的字元分別代表數字1~26  
+A 到 Z  代表數字 1 到 26  
 字串 AA 代表數字 27  
 字串 AB 代表數字 28  
 字串 ZY 代表數字 701  
@@ -18,3 +18,8 @@ Assert.AreEqual(1, testClass.TitleToNumber("A"));
 Assert.AreEqual(28, testClass.TitleToNumber("AB"));  
 Assert.AreEqual(701, testClass.TitleToNumber("ZY"));  
 Assert.AreEqual(2147483647, testClass.TitleToNumber("FXSHRXW"));  
+
+# 提交結果  
+![image](https://github.com/Jacky20200711/LeetCodeWithUnitTest/blob/master/SuccessShot.PNG?raw=true)
+&emsp;
+&emsp;
