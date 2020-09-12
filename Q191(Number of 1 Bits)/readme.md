@@ -22,6 +22,6 @@ Assert.AreEqual(31, testClass.HammingWeight(4294967293));
 Assert.AreEqual(32, testClass.HammingWeight(4294967295));   
   
 # 提交結果  
-![image](https://raw.githubusercontent.com/Jacky20200711/LeetCodeWithUnitTest/master/Q171(Number%20of%201%20Bits)/SuccessShot.PNG)
+![image](https://github.com/Jacky20200711/LeetCodeWithUnitTest/blob/master/Q191(Number%20of%201%20Bits)/SuccessShot.PNG?raw=true)
 &emsp;
 &emsp;
