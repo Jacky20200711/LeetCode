@@ -1,0 +1,13 @@
+D:\Desktop\Project\LeetCodeWithUnitTest\Q172(Factorial Trailing Zeroes)\bin\Debug\netcoreapp3.1\Q172(Factorial Trailing Zeroes).exe
+D:\Desktop\Project\LeetCodeWithUnitTest\Q172(Factorial Trailing Zeroes)\bin\Debug\netcoreapp3.1\Q172(Factorial Trailing Zeroes).deps.json
+D:\Desktop\Project\LeetCodeWithUnitTest\Q172(Factorial Trailing Zeroes)\bin\Debug\netcoreapp3.1\Q172(Factorial Trailing Zeroes).runtimeconfig.json
+D:\Desktop\Project\LeetCodeWithUnitTest\Q172(Factorial Trailing Zeroes)\bin\Debug\netcoreapp3.1\Q172(Factorial Trailing Zeroes).runtimeconfig.dev.json
+D:\Desktop\Project\LeetCodeWithUnitTest\Q172(Factorial Trailing Zeroes)\bin\Debug\netcoreapp3.1\Q172(Factorial Trailing Zeroes).dll
+D:\Desktop\Project\LeetCodeWithUnitTest\Q172(Factorial Trailing Zeroes)\bin\Debug\netcoreapp3.1\Q172(Factorial Trailing Zeroes).pdb
+D:\Desktop\Project\LeetCodeWithUnitTest\Q172(Factorial Trailing Zeroes)\obj\Debug\netcoreapp3.1\Q172(Factorial Trailing Zeroes).csprojAssemblyReference.cache
+D:\Desktop\Project\LeetCodeWithUnitTest\Q172(Factorial Trailing Zeroes)\obj\Debug\netcoreapp3.1\Q172(Factorial Trailing Zeroes).AssemblyInfoInputs.cache
+D:\Desktop\Project\LeetCodeWithUnitTest\Q172(Factorial Trailing Zeroes)\obj\Debug\netcoreapp3.1\Q172(Factorial Trailing Zeroes).AssemblyInfo.cs
+D:\Desktop\Project\LeetCodeWithUnitTest\Q172(Factorial Trailing Zeroes)\obj\Debug\netcoreapp3.1\Q172(Factorial Trailing Zeroes).csproj.CoreCompileInputs.cache
+D:\Desktop\Project\LeetCodeWithUnitTest\Q172(Factorial Trailing Zeroes)\obj\Debug\netcoreapp3.1\Q172(Factorial Trailing Zeroes).dll
+D:\Desktop\Project\LeetCodeWithUnitTest\Q172(Factorial Trailing Zeroes)\obj\Debug\netcoreapp3.1\Q172(Factorial Trailing Zeroes).pdb
+D:\Desktop\Project\LeetCodeWithUnitTest\Q172(Factorial Trailing Zeroes)\obj\Debug\netcoreapp3.1\Q172(Factorial Trailing Zeroes).genruntimeconfig.cache
