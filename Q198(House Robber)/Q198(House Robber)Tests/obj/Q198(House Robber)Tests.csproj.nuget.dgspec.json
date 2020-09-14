@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Desktop\\Q198(House Robber)Tests\\Q198(House Robber)Tests.csproj": {}
+    "D:\\Desktop\\Project\\LeetCodeWithUnitTest\\Q198(House Robber)\\Q198(House Robber)Tests\\Q198(House Robber)Tests.csproj": {}
   },
   "projects": {
-    "D:\\Desktop\\Q198(House Robber)Tests\\Q198(House Robber)Tests.csproj": {
+    "D:\\Desktop\\Project\\LeetCodeWithUnitTest\\Q198(House Robber)\\Q198(House Robber)Tests\\Q198(House Robber)Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desktop\\Q198(House Robber)Tests\\Q198(House Robber)Tests.csproj",
+        "projectUniqueName": "D:\\Desktop\\Project\\LeetCodeWithUnitTest\\Q198(House Robber)\\Q198(House Robber)Tests\\Q198(House Robber)Tests.csproj",
         "projectName": "Q198(House Robber)Tests",
-        "projectPath": "D:\\Desktop\\Q198(House Robber)Tests\\Q198(House Robber)Tests.csproj",
+        "projectPath": "D:\\Desktop\\Project\\LeetCodeWithUnitTest\\Q198(House Robber)\\Q198(House Robber)Tests\\Q198(House Robber)Tests.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\Desktop\\Q198(House Robber)Tests\\obj\\",
+        "outputPath": "D:\\Desktop\\Project\\LeetCodeWithUnitTest\\Q198(House Robber)\\Q198(House Robber)Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Desktop\\Q198(House Robber)\\Q198(House Robber).csproj": {
-                "projectPath": "D:\\Desktop\\Q198(House Robber)\\Q198(House Robber).csproj"
+              "D:\\Desktop\\Project\\LeetCodeWithUnitTest\\Q198(House Robber)\\Q198(House Robber)\\Q198(House Robber).csproj": {
+                "projectPath": "D:\\Desktop\\Project\\LeetCodeWithUnitTest\\Q198(House Robber)\\Q198(House Robber)\\Q198(House Robber).csproj"
               }
             }
           }
@@ -78,14 +78,14 @@
         }
       }
     },
-    "D:\\Desktop\\Q198(House Robber)\\Q198(House Robber).csproj": {
+    "D:\\Desktop\\Project\\LeetCodeWithUnitTest\\Q198(House Robber)\\Q198(House Robber)\\Q198(House Robber).csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desktop\\Q198(House Robber)\\Q198(House Robber).csproj",
+        "projectUniqueName": "D:\\Desktop\\Project\\LeetCodeWithUnitTest\\Q198(House Robber)\\Q198(House Robber)\\Q198(House Robber).csproj",
         "projectName": "Q198(House Robber)",
-        "projectPath": "D:\\Desktop\\Q198(House Robber)\\Q198(House Robber).csproj",
+        "projectPath": "D:\\Desktop\\Project\\LeetCodeWithUnitTest\\Q198(House Robber)\\Q198(House Robber)\\Q198(House Robber).csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\Desktop\\Q198(House Robber)\\obj\\",
+        "outputPath": "D:\\Desktop\\Project\\LeetCodeWithUnitTest\\Q198(House Robber)\\Q198(House Robber)\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

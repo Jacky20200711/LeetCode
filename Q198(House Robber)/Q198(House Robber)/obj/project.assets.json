@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Desktop\\Q198(House Robber)\\Q198(House Robber).csproj",
+      "projectUniqueName": "D:\\Desktop\\Project\\LeetCodeWithUnitTest\\Q198(House Robber)\\Q198(House Robber)\\Q198(House Robber).csproj",
       "projectName": "Q198(House Robber)",
-      "projectPath": "D:\\Desktop\\Q198(House Robber)\\Q198(House Robber).csproj",
+      "projectPath": "D:\\Desktop\\Project\\LeetCodeWithUnitTest\\Q198(House Robber)\\Q198(House Robber)\\Q198(House Robber).csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "D:\\Desktop\\Q198(House Robber)\\obj\\",
+      "outputPath": "D:\\Desktop\\Project\\LeetCodeWithUnitTest\\Q198(House Robber)\\Q198(House Robber)\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

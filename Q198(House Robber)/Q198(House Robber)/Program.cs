@@ -7,7 +7,7 @@ namespace Q198_House_Robber_
 {
     public class Program
     {
-        static void Main(string[] args) { }
+        static void Main() { }
 
         public int Rob(int[] nums)
         {
@@ -31,7 +31,7 @@ namespace Q198_House_Robber_
             maxProfit[nums.Length - 2] = nums[^1] > nums[^2] ? nums[^1] : nums[^2];
             maxProfit[nums.Length - 3] = nums[^1] + nums[^3] > nums[^2] ? nums[^1] + nums[^3] : nums[^2];
 
-            // 填入其他的答案
+            // 使用 DP 填入其它的答案
             for (int i = nums.Length - 4; i > -1; i--)
             {
                 // 從i開始偷錢的最大利益 = nums[i] + max(從i+2往後偷的最大利益, 從i+3往後偷的最大利益)
