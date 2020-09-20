@@ -46,6 +46,6 @@ Assert.AreEqual(12, testClass.Rob(new int[5] { 2, 7, 9, 3, 1 }));
 Assert.AreEqual(18, testClass.Rob(new int[6] { 6, 6, 6, 6, 6, 6}));  
   
 # 提交結果  
-![image](https://github.com/Jacky20200711/LeetCodeWithUnitTest/blob/master/Q198(House%20Robber)/SuccessShot.PNG?raw=true)
+![image](https://github.com/Jacky20200711/LeetCode/blob/master/Q198(House%20Robber)/SuccessShot.PNG?raw=true)
 &emsp;
 &emsp;

@@ -32,6 +32,6 @@ Assert.AreEqual(156, testClass.TrailingZeroes(625));
 Assert.AreEqual(536870902, testClass.TrailingZeroes(2147483647));  
 
 # 提交結果  
-![image](https://raw.githubusercontent.com/Jacky20200711/LeetCodeWithUnitTest/master/Q172(Factorial%20Trailing%20Zeroes)/SuccessShot.PNG)
+![image](https://raw.githubusercontent.com/Jacky20200711/LeetCode/master/Q172(Factorial%20Trailing%20Zeroes)/SuccessShot.PNG)
 &emsp;
 &emsp;
