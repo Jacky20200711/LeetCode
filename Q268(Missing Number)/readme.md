@@ -16,7 +16,7 @@ https://leetcode.com/problems/missing-number/
 例如看到 3 時，就令 HashTable[3] = 3，  
 之後只要檢查 HashTable，若 HashTable[i] 不等於 i，就表示數字 i 沒有出現過。  
 
-舉例:
+舉例:  
 當 Input = [1,2,3,4]  
 令 HashTable 的初始值 = [-1,0,0,0,0]  
 將 Input 的每個值都存到 HashTable 之後，HashTable = [-1,1,2,3,4]  
