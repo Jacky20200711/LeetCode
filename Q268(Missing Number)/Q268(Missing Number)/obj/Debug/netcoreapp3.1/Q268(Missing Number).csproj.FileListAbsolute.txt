@@ -1,0 +1,26 @@
+D:\Desktop\Q268(Missing Number)\bin\Debug\netcoreapp3.1\Q268(Missing Number).exe
+D:\Desktop\Q268(Missing Number)\bin\Debug\netcoreapp3.1\Q268(Missing Number).deps.json
+D:\Desktop\Q268(Missing Number)\bin\Debug\netcoreapp3.1\Q268(Missing Number).runtimeconfig.json
+D:\Desktop\Q268(Missing Number)\bin\Debug\netcoreapp3.1\Q268(Missing Number).runtimeconfig.dev.json
+D:\Desktop\Q268(Missing Number)\bin\Debug\netcoreapp3.1\Q268(Missing Number).dll
+D:\Desktop\Q268(Missing Number)\bin\Debug\netcoreapp3.1\Q268(Missing Number).pdb
+D:\Desktop\Q268(Missing Number)\obj\Debug\netcoreapp3.1\Q268(Missing Number).csprojAssemblyReference.cache
+D:\Desktop\Q268(Missing Number)\obj\Debug\netcoreapp3.1\Q268(Missing Number).AssemblyInfoInputs.cache
+D:\Desktop\Q268(Missing Number)\obj\Debug\netcoreapp3.1\Q268(Missing Number).AssemblyInfo.cs
+D:\Desktop\Q268(Missing Number)\obj\Debug\netcoreapp3.1\Q268(Missing Number).csproj.CoreCompileInputs.cache
+D:\Desktop\Q268(Missing Number)\obj\Debug\netcoreapp3.1\Q268(Missing Number).dll
+D:\Desktop\Q268(Missing Number)\obj\Debug\netcoreapp3.1\Q268(Missing Number).pdb
+D:\Desktop\Q268(Missing Number)\obj\Debug\netcoreapp3.1\Q268(Missing Number).genruntimeconfig.cache
+D:\Desktop\Project\LeetCode\Q268(Missing Number)\Q268(Missing Number)\bin\Debug\netcoreapp3.1\Q268(Missing Number).exe
+D:\Desktop\Project\LeetCode\Q268(Missing Number)\Q268(Missing Number)\bin\Debug\netcoreapp3.1\Q268(Missing Number).deps.json
+D:\Desktop\Project\LeetCode\Q268(Missing Number)\Q268(Missing Number)\bin\Debug\netcoreapp3.1\Q268(Missing Number).runtimeconfig.json
+D:\Desktop\Project\LeetCode\Q268(Missing Number)\Q268(Missing Number)\bin\Debug\netcoreapp3.1\Q268(Missing Number).runtimeconfig.dev.json
+D:\Desktop\Project\LeetCode\Q268(Missing Number)\Q268(Missing Number)\bin\Debug\netcoreapp3.1\Q268(Missing Number).dll
+D:\Desktop\Project\LeetCode\Q268(Missing Number)\Q268(Missing Number)\bin\Debug\netcoreapp3.1\Q268(Missing Number).pdb
+D:\Desktop\Project\LeetCode\Q268(Missing Number)\Q268(Missing Number)\obj\Debug\netcoreapp3.1\Q268(Missing Number).csprojAssemblyReference.cache
+D:\Desktop\Project\LeetCode\Q268(Missing Number)\Q268(Missing Number)\obj\Debug\netcoreapp3.1\Q268(Missing Number).AssemblyInfoInputs.cache
+D:\Desktop\Project\LeetCode\Q268(Missing Number)\Q268(Missing Number)\obj\Debug\netcoreapp3.1\Q268(Missing Number).AssemblyInfo.cs
+D:\Desktop\Project\LeetCode\Q268(Missing Number)\Q268(Missing Number)\obj\Debug\netcoreapp3.1\Q268(Missing Number).csproj.CoreCompileInputs.cache
+D:\Desktop\Project\LeetCode\Q268(Missing Number)\Q268(Missing Number)\obj\Debug\netcoreapp3.1\Q268(Missing Number).dll
+D:\Desktop\Project\LeetCode\Q268(Missing Number)\Q268(Missing Number)\obj\Debug\netcoreapp3.1\Q268(Missing Number).pdb
+D:\Desktop\Project\LeetCode\Q268(Missing Number)\Q268(Missing Number)\obj\Debug\netcoreapp3.1\Q268(Missing Number).genruntimeconfig.cache
