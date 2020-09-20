@@ -20,7 +20,7 @@ https://leetcode.com/problems/delete-node-in-a-linked-list/
 另外，由於這題給定的 Node 不會是最後一個 Node，所以不會出現沒有 Y 可以刪除的情況。  
 
 # UnitTest 使用的測資  
-這題實作太過簡單，所以沒有開專案與測試，而是直接寫在 LeetCode 的頁面後提交。   
+由於這題實作太過簡單，所以沒有開專案與測試，而是直接寫在 LeetCode 的頁面後提交。   
   
 # 提交結果  
 ![image](https://github.com/Jacky20200711/LeetCodeWithUnitTest/blob/master/Q237(Delete%20Node%20in%20a%20Linked%20List)/SuccessShot.PNG?raw=true)
