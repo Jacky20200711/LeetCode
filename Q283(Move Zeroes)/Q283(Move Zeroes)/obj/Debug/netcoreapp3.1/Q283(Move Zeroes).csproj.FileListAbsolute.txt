@@ -1,0 +1,13 @@
+D:\Desktop\Q283(Move Zeroes)\bin\Debug\netcoreapp3.1\Q283(Move Zeroes).exe
+D:\Desktop\Q283(Move Zeroes)\bin\Debug\netcoreapp3.1\Q283(Move Zeroes).deps.json
+D:\Desktop\Q283(Move Zeroes)\bin\Debug\netcoreapp3.1\Q283(Move Zeroes).runtimeconfig.json
+D:\Desktop\Q283(Move Zeroes)\bin\Debug\netcoreapp3.1\Q283(Move Zeroes).runtimeconfig.dev.json
+D:\Desktop\Q283(Move Zeroes)\bin\Debug\netcoreapp3.1\Q283(Move Zeroes).dll
+D:\Desktop\Q283(Move Zeroes)\bin\Debug\netcoreapp3.1\Q283(Move Zeroes).pdb
+D:\Desktop\Q283(Move Zeroes)\obj\Debug\netcoreapp3.1\Q283(Move Zeroes).csprojAssemblyReference.cache
+D:\Desktop\Q283(Move Zeroes)\obj\Debug\netcoreapp3.1\Q283(Move Zeroes).AssemblyInfoInputs.cache
+D:\Desktop\Q283(Move Zeroes)\obj\Debug\netcoreapp3.1\Q283(Move Zeroes).AssemblyInfo.cs
+D:\Desktop\Q283(Move Zeroes)\obj\Debug\netcoreapp3.1\Q283(Move Zeroes).csproj.CoreCompileInputs.cache
+D:\Desktop\Q283(Move Zeroes)\obj\Debug\netcoreapp3.1\Q283(Move Zeroes).dll
+D:\Desktop\Q283(Move Zeroes)\obj\Debug\netcoreapp3.1\Q283(Move Zeroes).pdb
+D:\Desktop\Q283(Move Zeroes)\obj\Debug\netcoreapp3.1\Q283(Move Zeroes).genruntimeconfig.cache
