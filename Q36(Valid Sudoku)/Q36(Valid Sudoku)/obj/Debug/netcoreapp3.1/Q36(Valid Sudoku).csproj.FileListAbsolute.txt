@@ -1,0 +1,26 @@
+D:\Desktop\Q36(Valid Sudoku)\bin\Debug\netcoreapp3.1\Q36(Valid Sudoku).exe
+D:\Desktop\Q36(Valid Sudoku)\bin\Debug\netcoreapp3.1\Q36(Valid Sudoku).deps.json
+D:\Desktop\Q36(Valid Sudoku)\bin\Debug\netcoreapp3.1\Q36(Valid Sudoku).runtimeconfig.json
+D:\Desktop\Q36(Valid Sudoku)\bin\Debug\netcoreapp3.1\Q36(Valid Sudoku).runtimeconfig.dev.json
+D:\Desktop\Q36(Valid Sudoku)\bin\Debug\netcoreapp3.1\Q36(Valid Sudoku).dll
+D:\Desktop\Q36(Valid Sudoku)\bin\Debug\netcoreapp3.1\Q36(Valid Sudoku).pdb
+D:\Desktop\Q36(Valid Sudoku)\obj\Debug\netcoreapp3.1\Q36(Valid Sudoku).csprojAssemblyReference.cache
+D:\Desktop\Q36(Valid Sudoku)\obj\Debug\netcoreapp3.1\Q36(Valid Sudoku).AssemblyInfoInputs.cache
+D:\Desktop\Q36(Valid Sudoku)\obj\Debug\netcoreapp3.1\Q36(Valid Sudoku).AssemblyInfo.cs
+D:\Desktop\Q36(Valid Sudoku)\obj\Debug\netcoreapp3.1\Q36(Valid Sudoku).csproj.CoreCompileInputs.cache
+D:\Desktop\Q36(Valid Sudoku)\obj\Debug\netcoreapp3.1\Q36(Valid Sudoku).dll
+D:\Desktop\Q36(Valid Sudoku)\obj\Debug\netcoreapp3.1\Q36(Valid Sudoku).pdb
+D:\Desktop\Q36(Valid Sudoku)\obj\Debug\netcoreapp3.1\Q36(Valid Sudoku).genruntimeconfig.cache
+D:\Desktop\Q36(Valid Sudoku)\Q36(Valid Sudoku)\bin\Debug\netcoreapp3.1\Q36(Valid Sudoku).exe
+D:\Desktop\Q36(Valid Sudoku)\Q36(Valid Sudoku)\bin\Debug\netcoreapp3.1\Q36(Valid Sudoku).deps.json
+D:\Desktop\Q36(Valid Sudoku)\Q36(Valid Sudoku)\bin\Debug\netcoreapp3.1\Q36(Valid Sudoku).runtimeconfig.json
+D:\Desktop\Q36(Valid Sudoku)\Q36(Valid Sudoku)\bin\Debug\netcoreapp3.1\Q36(Valid Sudoku).runtimeconfig.dev.json
+D:\Desktop\Q36(Valid Sudoku)\Q36(Valid Sudoku)\bin\Debug\netcoreapp3.1\Q36(Valid Sudoku).dll
+D:\Desktop\Q36(Valid Sudoku)\Q36(Valid Sudoku)\bin\Debug\netcoreapp3.1\Q36(Valid Sudoku).pdb
+D:\Desktop\Q36(Valid Sudoku)\Q36(Valid Sudoku)\obj\Debug\netcoreapp3.1\Q36(Valid Sudoku).csprojAssemblyReference.cache
+D:\Desktop\Q36(Valid Sudoku)\Q36(Valid Sudoku)\obj\Debug\netcoreapp3.1\Q36(Valid Sudoku).AssemblyInfoInputs.cache
+D:\Desktop\Q36(Valid Sudoku)\Q36(Valid Sudoku)\obj\Debug\netcoreapp3.1\Q36(Valid Sudoku).AssemblyInfo.cs
+D:\Desktop\Q36(Valid Sudoku)\Q36(Valid Sudoku)\obj\Debug\netcoreapp3.1\Q36(Valid Sudoku).csproj.CoreCompileInputs.cache
+D:\Desktop\Q36(Valid Sudoku)\Q36(Valid Sudoku)\obj\Debug\netcoreapp3.1\Q36(Valid Sudoku).dll
+D:\Desktop\Q36(Valid Sudoku)\Q36(Valid Sudoku)\obj\Debug\netcoreapp3.1\Q36(Valid Sudoku).pdb
+D:\Desktop\Q36(Valid Sudoku)\Q36(Valid Sudoku)\obj\Debug\netcoreapp3.1\Q36(Valid Sudoku).genruntimeconfig.cache
