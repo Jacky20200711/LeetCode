@@ -25,6 +25,7 @@ https://leetcode.com/problems/sudoku-solver/
 若發現當前的格子無法再填入任何數字，則程式會退回到X的上一層  
   
 # UnitTest 使用的測資  
+使用題目給的測資即可，因為懶得去找其他有唯一解的數獨XD  
 char[][] Sudoku =  
 {  
 &nbsp;&nbsp;&nbsp;&nbsp;new char[9]{ '5', '3', '.', '.', '7', '.', '.', '.', '.' },  
@@ -40,28 +41,28 @@ char[][] Sudoku =
   
 char[][] Answer =  
 {  
-&nbsp;&nbsp;&nbsp;&nbsp;new char[9]new char[9]{ '5', '3', '4', '6', '7', '8', '9', '1', '2' },  
-&nbsp;&nbsp;&nbsp;&nbsp;new char[9]new char[9]{ '6', '7', '2', '1', '9', '5', '3', '4', '8' },  
-&nbsp;&nbsp;&nbsp;&nbsp;new char[9]new char[9]{ '1', '9', '8', '3', '4', '2', '5', '6', '7' },  
-&nbsp;&nbsp;&nbsp;&nbsp;new char[9]new char[9]{ '8', '5', '9', '7', '6', '1', '4', '2', '3' },  
-&nbsp;&nbsp;&nbsp;&nbsp;new char[9]new char[9]{ '4', '2', '6', '8', '5', '3', '7', '9', '1' },  
-&nbsp;&nbsp;&nbsp;&nbsp;new char[9]new char[9]{ '7', '1', '3', '9', '2', '4', '8', '5', '6' },  
-&nbsp;&nbsp;&nbsp;&nbsp;new char[9]new char[9]{ '9', '6', '1', '5', '3', '7', '2', '8', '4' },  
-&nbsp;&nbsp;&nbsp;&nbsp;new char[9]new char[9]{ '2', '8', '7', '4', '1', '9', '6', '3', '5' },  
-&nbsp;&nbsp;&nbsp;&nbsp;new char[9]new char[9]{ '3', '4', '5', '2', '8', '6', '1', '7', '9' }  
+&nbsp;&nbsp;&nbsp;&nbsp;new char[9]{ '5', '3', '4', '6', '7', '8', '9', '1', '2' },  
+&nbsp;&nbsp;&nbsp;&nbsp;new char[9]{ '6', '7', '2', '1', '9', '5', '3', '4', '8' },  
+&nbsp;&nbsp;&nbsp;&nbsp;new char[9]{ '1', '9', '8', '3', '4', '2', '5', '6', '7' },  
+&nbsp;&nbsp;&nbsp;&nbsp;new char[9]{ '8', '5', '9', '7', '6', '1', '4', '2', '3' },  
+&nbsp;&nbsp;&nbsp;&nbsp;new char[9]{ '4', '2', '6', '8', '5', '3', '7', '9', '1' },  
+&nbsp;&nbsp;&nbsp;&nbsp;new char[9]{ '7', '1', '3', '9', '2', '4', '8', '5', '6' },  
+&nbsp;&nbsp;&nbsp;&nbsp;new char[9]{ '9', '6', '1', '5', '3', '7', '2', '8', '4' },  
+&nbsp;&nbsp;&nbsp;&nbsp;new char[9]{ '2', '8', '7', '4', '1', '9', '6', '3', '5' },  
+&nbsp;&nbsp;&nbsp;&nbsp;new char[9]{ '3', '4', '5', '2', '8', '6', '1', '7', '9' }  
 };  
   
 testClass.SolveSudoku(Sudoku);  
   
 for(int i = 0; i < 9; i++)  
 {  
-&nbsp;&nbsp;&nbsp;&nbsp;new char[9]for (int j = 0; j < 9; j++)  
-&nbsp;&nbsp;&nbsp;&nbsp;new char[9]{  
-&nbsp;&nbsp;&nbsp;&nbsp;new char[9]if(Sudoku[i][j] != Answer[i][j])  
-&nbsp;&nbsp;&nbsp;&nbsp;new char[9]{  
-&nbsp;&nbsp;&nbsp;&nbsp;new char[9]Assert.Fail();  
-&nbsp;&nbsp;&nbsp;&nbsp;new char[9]}  
-&nbsp;&nbsp;&nbsp;&nbsp;new char[9]}  
+&nbsp;&nbsp;&nbsp;&nbsp;for (int j = 0; j < 9; j++)  
+&nbsp;&nbsp;&nbsp;&nbsp;{  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(Sudoku[i][j] != Answer[i][j])  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assert.Fail();  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}  
+&nbsp;&nbsp;&nbsp;&nbsp;}  
 }  
   
 # 提交結果  
