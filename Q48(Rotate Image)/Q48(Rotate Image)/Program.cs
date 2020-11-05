@@ -1,0 +1,41 @@
+﻿using System;
+
+namespace Q48_Rotate_Image_
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+
+        public void Rotate(int[][] matrix)
+        {
+            int[][] TempMatrix = new int[matrix.Length][];
+
+            // 將暫存陣列初始化
+            for (int i = 0; i < matrix.Length; i++)
+            {
+                TempMatrix[i] = new int[matrix.Length];
+            }
+
+            // 將原陣列的列對應到新陣列的行
+            for (int i = 0; i < matrix.Length; i++)
+            {
+                for (int j = 0; j < matrix.Length; j++)
+                {
+                    TempMatrix[j][matrix.Length - 1 - i] = matrix[i][j];
+                }
+            }
+
+            // 將行列互換過的值存回原陣列
+            for (int i = 0; i < matrix.Length; i++)
+            {
+                for (int j = 0; j < matrix.Length; j++)
+                {
+                    matrix[i][j] = TempMatrix[i][j];
+                }
+            }
+        }
+    }
+}

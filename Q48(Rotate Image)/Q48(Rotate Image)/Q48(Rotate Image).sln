@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q48(Rotate Image)", "Q48(Rotate Image).csproj", "{02560144-E586-4C40-ADCF-0A0AA499EA47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q48(Rotate Image)Tests", "..\Q48(Rotate Image)Tests\Q48(Rotate Image)Tests.csproj", "{4978D1DA-F85D-4992-B692-9D552B8F0AAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02560144-E586-4C40-ADCF-0A0AA499EA47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02560144-E586-4C40-ADCF-0A0AA499EA47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02560144-E586-4C40-ADCF-0A0AA499EA47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02560144-E586-4C40-ADCF-0A0AA499EA47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4978D1DA-F85D-4992-B692-9D552B8F0AAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4978D1DA-F85D-4992-B692-9D552B8F0AAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4978D1DA-F85D-4992-B692-9D552B8F0AAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4978D1DA-F85D-4992-B692-9D552B8F0AAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3256205F-0389-4319-A415-12D165EC9067}
+	EndGlobalSection
+EndGlobal
