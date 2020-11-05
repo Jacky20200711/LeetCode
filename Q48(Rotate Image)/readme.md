@@ -95,7 +95,7 @@ for(int i = 0; i < Sample.Length; i++)
 // 第二筆測資  
 Sample = new int[][]  
 {  
-    new int[]{ 1 }  
+&nbsp;&nbsp;&nbsp;&nbsp;new int[]{ 1 }  
 };  
   
 UnitTest.Rotate(Sample);  
