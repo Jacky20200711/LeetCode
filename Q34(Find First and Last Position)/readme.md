@@ -51,6 +51,6 @@ answer = new int[] { 0, 9 };
 Assert.AreEqual(true, Enumerable.SequenceEqual(verify, answer));  
   
 # 提交結果  
-![image](https://raw.githubusercontent.com/Jacky20200711/LeetCode/master/Q34(Find%20First%20and%20Last%20Position%20of%20Element%20in%20Sorted%20Array)/SuccessShot.PNG)  
+![image](https://raw.githubusercontent.com/Jacky20200711/LeetCode/master/Q34(Find%20First%20and%20Last%20Position)/SuccessShot.PNG)  
 &emsp;  
 &emsp;  
