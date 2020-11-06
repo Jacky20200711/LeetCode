@@ -24,7 +24,7 @@ namespace Q34_Find_First_and_Last_Position_
                 FirstPosition = LastPosition = FirstFindPosition;
             }
 
-            // 做零到(X-1)的二分搜尋 & 持續壓縮 X 的值，直到找不到目標值
+            // 做 Index = 0~(X-1) 的二分搜尋 & 持續左移X，直到找不到目標值
             X = FirstFindPosition;
             while (true)
             {
@@ -37,11 +37,11 @@ namespace Q34_Find_First_and_Last_Position_
                 else break;
             }
 
-            // 做(X+1)到尾端的二分搜尋 & 持續壓縮 X 的值，直到找不到目標值
+            // 做 Index = (X+1)~(Array.Length-1) 的二分搜尋 & 持續右移X，直到找不到目標值
             X = FirstFindPosition;
             while (true)
             {
-                // 計算從 (FindPosition + 1) 到尾端的數量
+                // 計算從 (X + 1) 到尾端的數量
                 int len = nums.Length - X - 1;
                 int NewPosition = Array.BinarySearch(nums, X + 1, len, target);
 
