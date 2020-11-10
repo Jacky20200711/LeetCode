@@ -5,20 +5,20 @@ https://leetcode.com/problems/search-in-rotated-sorted-array/
 我們的任務是: 找出這個數字出現在陣列的索引(若該數字不存在則返回-1)。  
   
 範例輸入1:  
-Array = { 4,5,6,7,0,1,2 } & TargetNumber = 0  
+Array = { 4,5,6,7,0,1,2 }、TargetNumber = 0  
   
 範例輸出1:  
 Output = 4  
   
 範例輸入2:  
-Array = { 1 } & TargetNumber = 0  
+Array = { 1 }、TargetNumber = 0  
   
 範例輸出2:  
 Output = -1  
   
 # 解題思路  
 觀察後可以發現，轉軸(pivot)的左右兩邊都會是已排序狀態，  
-所以我們只要找到 pivot 後再分別對 pivot 左右兩邊做二分搜尋即可。  
+所以只要找到 pivot 再分別對左右兩邊做二分搜尋即可。  
   
 假設 Array = { 4,5,6,7,0,1,2 }，  
 則 pivot 的左右兩邊分別為 { 4,5,6,7 } 和 { 0,1,2 }  
@@ -28,9 +28,9 @@ Output = -1
 1.搜尋整個陣列直到發現下一個數不是變大，而是變小  
 2.使用二分搜尋  
 EX : 若砍到的值大於 Array 的第一個數，表示 pivot 在右邊  
-EX : 若砍到的值小於 Array 的第一個數，表示 pivot 在左邊或恰好砍到值的索引  
+EX : 若砍到的值小於 Array 的第一個數，表示 pivot 在左邊或恰好為當前砍到的索引  
   
-一開始犯懶使用方法一，雖然可以過關但效率不太好，改成方法二後果然效率大幅提升XD  
+剛開始犯懶使用方法一，雖然可以過關但效率很差，改成方法二後果然效率大幅提升XD  
   
 # UnitTest 使用的測資  
 [TestMethod()]  
