@@ -5,8 +5,8 @@ https://leetcode.com/problems/sort-colors/
 我們的任務是: 排序這些數字。  
   
 範例:  
-Input  = { 2, 0, 2, 1, 1, 0 }  
-Output = { 0, 0, 1, 1, 2, 2 }  
+輸入 = { 2, 0, 2, 1, 1, 0 }  
+輸出 = { 0, 0, 1, 1, 2, 2 }  
   
 # 解題思路  
 使用 Counting sort 即可，這題太簡單了，感覺應該擺在 Easy 而不是 Medium XD  
