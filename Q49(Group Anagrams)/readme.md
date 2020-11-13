@@ -2,7 +2,7 @@
 https://leetcode.com/problems/group-anagrams/  
   
 題目的 Input 為一組字串陣列(只含英文小寫)，我們的任務是: 將易位的字串放在同一組。  
-※易位的意思是將字串裡面的字母任意排列，例如 abc 可以排列成 acb bac bca cab cba  
+※易位的意思是將字串裡面的字元任意排列，例如 abc 可以排列成 acb bac bca cab cba  
   
 範例:  
 輸入 = { "abc", "acb", "bac", "bca", "cab", "cba", "x" }  
@@ -10,9 +10,9 @@ https://leetcode.com/problems/group-anagrams/
   
 # 解題思路  
 1.觀察同一組的字串，可以發現對每個字串做字元排序後都會得到一樣的結果，  
-例如對 acb bac bca cab cba 各個字串分別做字元排序後，都會變成 abc  
+例如對 acb bac bca cab cba 分別做字元排序後，都會變成 abc  
   
-2.以對字元排序後的結果當作 Hash Key，將具有相同 Key 的字串放到同一組即可。  
+2.將字元排序後的結果當作 Hash Key，將具有相同 Key 的字串放到同一組即可。  
   
 # UnitTest 使用的測資  
 [TestMethod()]  
