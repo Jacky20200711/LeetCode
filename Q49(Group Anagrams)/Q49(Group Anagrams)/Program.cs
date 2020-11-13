@@ -10,64 +10,33 @@ namespace Q49_Group_Anagrams_
             
         }
 
-        public string GetCharFreqStr(string TargetStr)
-        {
-            int[] CharFreq = new int[26];
-
-            // 統計各小寫字元的出現頻率
-            for (int i = 0; i < TargetStr.Length; i++)
-            {
-                CharFreq[TargetStr[i] - 97]++;
-            }
-
-            // 將統計結果轉成字串，以方便之後用 HashTable 分組
-            // 舉例 : aaab 經過轉換後，會變成 a3b
-            string CharStr = "abcdefghijklmnopqrstuvwxyz";
-            List<string> FreqToStrList = new List<string>();
-
-            for (int i = 0; i < CharStr.Length; i++)
-            {
-                if (CharFreq[i] != 0)
-                {
-                    FreqToStrList.Add(CharStr[i].ToString());
-                    FreqToStrList.Add(CharFreq[i].ToString());
-                }
-            }
-            return string.Join("", FreqToStrList);
-        }
-
         public IList<IList<string>> GroupAnagrams(string[] strs)
         {
             IList<IList<string>> AnagramGroups = new List<IList<string>>();
-            Dictionary<string, List<int>> IndexGroups = new Dictionary<string, List<int>>();
+
+            // Key 為各字元排序後轉成的哈希字串，Value 為該哈希字串對應到的群組索引
+            Dictionary<string, int> IndexGroups = new Dictionary<string, int>();
+            int GroupNum = 0;
 
             for (int i = 0; i < strs.Length; i++)
             {
-                // 取得當前字串的字元頻率
-                string FreqStr = GetCharFreqStr(strs[i]);
+                // 重點:具有同樣字元頻率的兩個字串，各自對內部的字元進行排序後其結果會一樣
+                // 利用這個特性，我們將當前字串的內部進行排序後，放入字典當 Hash Key
+                char[] CharArrayOfStr = strs[i].ToCharArray();
+                Array.Sort(CharArrayOfStr);
+                string FreqStr = string.Join("", CharArrayOfStr);
 
-                // 將相同字元頻率的 Hash 到同一個 Group (存索引即可)
+                // 若該哈希字串已經存在對應的群組則加入
                 if (IndexGroups.ContainsKey(FreqStr))
                 {
-                    IndexGroups[FreqStr].Add(i);
+                    AnagramGroups[IndexGroups[FreqStr]].Add(strs[i]);
                 }
+                // 若不存在則建立新的群組並加入
                 else
                 {
-                    // 新增 Group
-                    IndexGroups[FreqStr] = new List<int> { i };
-                }
-            }
-
-            // 取出各組別的字串，並放入用來儲存答案的二維串列
-            foreach(var IndexGroup in IndexGroups)
-            {
-                // 新增 Group
-                AnagramGroups.Add(new List<string>());
-
-                // 將同一組的字串加入到這個 Group 
-                foreach (var index in IndexGroup.Value)
-                {
-                    AnagramGroups[^1].Add(strs[index]);
+                    IndexGroups[FreqStr] = GroupNum;
+                    AnagramGroups.Add(new List<string> { strs[i] });
+                    GroupNum++;
                 }
             }
             return AnagramGroups;
