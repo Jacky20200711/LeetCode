@@ -16,7 +16,7 @@ namespace Q54_Spiral_Matrix_.Tests
             Program UnitTest = new Program();
 
             // ------------------------------------------------------------------------------------
-            int[][] maxtrix = new int[][]{
+            int[][] matrix = new int[][]{
                 new int[] { 1, 2, 3 },
                 new int[] { 4, 5, 6 },
                 new int[] { 7, 8, 9 },
@@ -24,9 +24,9 @@ namespace Q54_Spiral_Matrix_.Tests
 
             int[] answer = new int[] { 1, 2, 3, 6, 9, 8, 7, 4, 5 };
 
-            Assert.AreEqual(true, Enumerable.SequenceEqual(UnitTest.SpiralOrder(maxtrix), answer));
+            Assert.AreEqual(true, Enumerable.SequenceEqual(UnitTest.SpiralOrder(matrix), answer));
             // ------------------------------------------------------------------------------------
-            maxtrix = new int[][]{
+            matrix = new int[][]{
                 new int[] { 1, 2, 3, 4 },
                 new int[] { 5, 6, 7, 8 },
                 new int[] { 9, 10, 11, 12 },
@@ -34,32 +34,32 @@ namespace Q54_Spiral_Matrix_.Tests
 
             answer = new int[] { 1, 2, 3, 4, 8, 12, 11, 10, 9, 5, 6, 7 };
 
-            Assert.AreEqual(true, Enumerable.SequenceEqual(UnitTest.SpiralOrder(maxtrix), answer));
+            Assert.AreEqual(true, Enumerable.SequenceEqual(UnitTest.SpiralOrder(matrix), answer));
             // ------------------------------------------------------------------------------------
-            maxtrix = new int[][]{
+            matrix = new int[][]{
                 new int[] { 1 },
             };
 
             answer = new int[] { 1 };
 
-            Assert.AreEqual(true, Enumerable.SequenceEqual(UnitTest.SpiralOrder(maxtrix), answer));
+            Assert.AreEqual(true, Enumerable.SequenceEqual(UnitTest.SpiralOrder(matrix), answer));
             // ------------------------------------------------------------------------------------
-            maxtrix = new int[][]{
+            matrix = new int[][]{
                 new int[] { 1, 2 },
             };
 
             answer = new int[] { 1, 2 };
 
-            Assert.AreEqual(true, Enumerable.SequenceEqual(UnitTest.SpiralOrder(maxtrix), answer));
+            Assert.AreEqual(true, Enumerable.SequenceEqual(UnitTest.SpiralOrder(matrix), answer));
             // ------------------------------------------------------------------------------------
-            maxtrix = new int[][]{
+            matrix = new int[][]{
                 new int[] { 1 },
                 new int[] { 2 },
             };
 
             answer = new int[] { 1, 2 };
 
-            Assert.AreEqual(true, Enumerable.SequenceEqual(UnitTest.SpiralOrder(maxtrix), answer));
+            Assert.AreEqual(true, Enumerable.SequenceEqual(UnitTest.SpiralOrder(matrix), answer));
             // ------------------------------------------------------------------------------------
         }
     }
