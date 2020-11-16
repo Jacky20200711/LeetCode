@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q54(Spiral Matrix)", "Q54(Spiral Matrix).csproj", "{CE0B1ED2-7321-4812-9D91-30EB056954B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q54(Spiral Matrix)Tests", "..\Q54(Spiral Matrix)Tests\Q54(Spiral Matrix)Tests.csproj", "{590EA1D4-4927-4BA7-A9E1-29F8846009AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE0B1ED2-7321-4812-9D91-30EB056954B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE0B1ED2-7321-4812-9D91-30EB056954B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE0B1ED2-7321-4812-9D91-30EB056954B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE0B1ED2-7321-4812-9D91-30EB056954B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{590EA1D4-4927-4BA7-A9E1-29F8846009AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{590EA1D4-4927-4BA7-A9E1-29F8846009AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{590EA1D4-4927-4BA7-A9E1-29F8846009AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{590EA1D4-4927-4BA7-A9E1-29F8846009AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B8DCEDF-EE69-4ED6-8281-410F750BC32A}
+	EndGlobalSection
+EndGlobal
