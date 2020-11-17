@@ -21,7 +21,7 @@ https://leetcode.com/problems/set-matrix-zeroes/
 2.取出 HashTable 的內容並將對應的 row 或 col 所有的值設成零  
   
 # UnitTest 使用的測資  
-// ---------------------------------------------------  
+// -------------------------------------------------------------  
 int[][] matrix =  
 {  
 &nbsp;&nbsp;&nbsp;&nbsp;new int[]{ 1, 1, 1 },  
@@ -39,7 +39,7 @@ int[][] answer =
 unitTest.SetZeroes(matrix);  
   
 Assert.AreEqual(true, HasSameContent(matrix, answer));  
-// ---------------------------------------------------  
+// -------------------------------------------------------------  
 matrix = new int[][]  
 {  
 &nbsp;&nbsp;&nbsp;&nbsp;new int[] { 0, 1, 2, 0 },  
@@ -57,7 +57,7 @@ answer = new int[][]
 unitTest.SetZeroes(matrix);  
   
 Assert.AreEqual(true, HasSameContent(matrix, answer));  
-// ---------------------------------------------------  
+// -------------------------------------------------------------  
 matrix = new int[][]  
 {  
 &nbsp;&nbsp;&nbsp;&nbsp;new int[] { 1 },  
@@ -73,7 +73,7 @@ answer = new int[][]
 unitTest.SetZeroes(matrix);  
   
 Assert.AreEqual(true, HasSameContent(matrix, answer));  
-// ---------------------------------------------------  
+// -------------------------------------------------------------  
   
 # 提交結果  
 ![image](https://raw.githubusercontent.com/Jacky20200711/LeetCode/master/Q73(Set%20Matrix%20Zeroes)/SuccessShot.PNG)  
