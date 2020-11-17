@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q41(First Missing Positive)", "Q41(First Missing Positive).csproj", "{31424FF4-FB69-4A63-8BB3-F26BA1A4F13C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q41(First Missing Positive)Tests", "..\Q41(First Missing Positive)Tests\Q41(First Missing Positive)Tests.csproj", "{41EA3B3B-4D92-4AB2-9C2C-0198330D6EFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31424FF4-FB69-4A63-8BB3-F26BA1A4F13C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31424FF4-FB69-4A63-8BB3-F26BA1A4F13C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31424FF4-FB69-4A63-8BB3-F26BA1A4F13C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31424FF4-FB69-4A63-8BB3-F26BA1A4F13C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41EA3B3B-4D92-4AB2-9C2C-0198330D6EFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41EA3B3B-4D92-4AB2-9C2C-0198330D6EFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41EA3B3B-4D92-4AB2-9C2C-0198330D6EFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41EA3B3B-4D92-4AB2-9C2C-0198330D6EFB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {130812A0-A6ED-48B4-8955-7562B102340D}
+	EndGlobalSection
+EndGlobal
