@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q55(Jump Game)", "Q55(Jump Game).csproj", "{B0BBC96B-781C-4B3E-A474-7DF1C7FEDC63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q55(Jump Game)Tests", "..\Q55(Jump Game)Tests\Q55(Jump Game)Tests.csproj", "{C5D7927F-10F4-4E11-ABED-7D0A6514D043}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0BBC96B-781C-4B3E-A474-7DF1C7FEDC63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0BBC96B-781C-4B3E-A474-7DF1C7FEDC63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0BBC96B-781C-4B3E-A474-7DF1C7FEDC63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0BBC96B-781C-4B3E-A474-7DF1C7FEDC63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5D7927F-10F4-4E11-ABED-7D0A6514D043}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5D7927F-10F4-4E11-ABED-7D0A6514D043}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5D7927F-10F4-4E11-ABED-7D0A6514D043}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5D7927F-10F4-4E11-ABED-7D0A6514D043}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {75B996F2-741F-4DD7-A24F-5B2A2AB55003}
+	EndGlobalSection
+EndGlobal
