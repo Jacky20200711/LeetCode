@@ -12,13 +12,13 @@ https://leetcode.com/problems/find-peak-element/
 範例2:  
 輸入 = { 1, 2, 1, 3, 5, 6, 4 }  
 輸出 = 1 or 5 都可以  
-  
+&emsp;  
+&emsp;
 # 解題思路  
 使用二分搜尋並考慮下面三種情況即可  
 1.若 nums[mid] > 兩邊，則本身就是 Peak  
 2.若 nums[mid] < nums[mid+1]，則 nums[mid] 右邊必然存在 Peak  
 3.若 nums[mid] < nums[mid-1]，則 nums[mid] 左邊必然存在 Peak  
-※判斷前記得要注意左右是否越界!  
   
 但問題來了，上述的情況2和3為什麼會成立呢?  
 想像一下，令當前的 nums = { X1, X2, ..., 10, 11, Y1, Y2, ... }  
@@ -30,7 +30,8 @@ https://leetcode.com/problems/find-peak-element/
 ...以此類推  
 當一路遞增到最後一個數字後，卻發現最後一個數字必然是 Peak (因為邊界被定義成無限小)，  
 所以，我們透過反證法成功證明了情況2會成立XD(情況3同理可證)  
-  
+&emsp;
+&emsp;
 # UnitTest 使用的測資  
 index = unitTest.FindPeakElement(new int[] { 1, 2, 3, 1 });  
 Assert.AreEqual(true, InAnswer(index, new HashSet<int> { 2 }));  
@@ -46,7 +47,8 @@ Assert.AreEqual(true, InAnswer(index, new HashSet<int> { 3 }));
   
 index = unitTest.FindPeakElement(new int[] { 1, 2 });  
 Assert.AreEqual(true, InAnswer(index, new HashSet<int> { 1 }));  
-  
+&emsp;
+&emsp;
 # 提交結果  
 ![image](https://raw.githubusercontent.com/Jacky20200711/LeetCode/master/Q162(Find%20Peak%20Element)/SuccessShot.PNG)  
 &emsp;  
