@@ -32,18 +32,18 @@ namespace Q130_Surrounded_Regions_.Tests
             // -------------------------------------------------------------
             char[][] region =
             {
-                 new char[] { 'X', 'X', 'X', 'X'},
-                 new char[] { 'X', 'O', 'O', 'X'},
-                 new char[] { 'X', 'X', 'O', 'X'},
-                 new char[] { 'X', 'O', 'X', 'X'},
+                 new char[] { 'X', 'X', 'X', 'X' },
+                 new char[] { 'X', 'O', 'O', 'X' },
+                 new char[] { 'X', 'X', 'O', 'X' },
+                 new char[] { 'X', 'O', 'X', 'X' },
             };
 
             char[][] answer =
             {
-                new char[] { 'X', 'X', 'X', 'X'},
-                new char[] { 'X', 'X', 'X', 'X'},
-                new char[] { 'X', 'X', 'X', 'X'},
-                new char[] { 'X', 'O', 'X', 'X'},
+                new char[] { 'X', 'X', 'X', 'X' },
+                new char[] { 'X', 'X', 'X', 'X' },
+                new char[] { 'X', 'X', 'X', 'X' },
+                new char[] { 'X', 'O', 'X', 'X' },
             };
 
             unitTest.Solve(region);
@@ -52,18 +52,18 @@ namespace Q130_Surrounded_Regions_.Tests
             // -------------------------------------------------------------
             region = new char[][]
             {
-                 new char[] { 'O', 'X', 'X', 'X'},
-                 new char[] { 'X', 'O', 'O', 'X'},
-                 new char[] { 'X', 'X', 'O', 'X'},
-                 new char[] { 'X', 'X', 'X', 'O'},
+                 new char[] { 'O', 'X', 'X', 'X' },
+                 new char[] { 'X', 'O', 'O', 'X' },
+                 new char[] { 'X', 'X', 'O', 'X' },
+                 new char[] { 'X', 'X', 'X', 'O' },
             };
 
             answer = new char[][]
             {
-                new char[] { 'O', 'X', 'X', 'X'},
-                new char[] { 'X', 'X', 'X', 'X'},
-                new char[] { 'X', 'X', 'X', 'X'},
-                new char[] { 'X', 'X', 'X', 'O'},
+                new char[] { 'O', 'X', 'X', 'X' },
+                new char[] { 'X', 'X', 'X', 'X' },
+                new char[] { 'X', 'X', 'X', 'X' },
+                new char[] { 'X', 'X', 'X', 'O' },
             };
 
             unitTest.Solve(region);

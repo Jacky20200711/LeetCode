@@ -5,17 +5,17 @@ https://leetcode.com/problems/surrounded-regions/
 ※注意，邊界的外圍不算是X，所以範例的第一個字元不算是被X包圍。  
   
 範例輸入 = {  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ 'O', 'X', 'X', 'X'},  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ 'X', 'O', 'O', 'X'},  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ 'X', 'X', 'O', 'X'},  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ 'X', 'X', 'X', 'O'},  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ 'O', 'X', 'X', 'X' },  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ 'X', 'O', 'O', 'X' },  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ 'X', 'X', 'O', 'X' },  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ 'X', 'X', 'X', 'O' },  
 };  
   
 範例輸出 = {  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ 'O', 'X', 'X', 'X'},  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ 'X', 'X', 'X', 'X'},  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ 'X', 'X', 'X', 'X'},  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ 'X', 'X', 'X', 'O'},  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ 'O', 'X', 'X', 'X' },  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ 'X', 'X', 'X', 'X' },  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ 'X', 'X', 'X', 'X' },  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ 'X', 'X', 'X', 'O' },  
 };  
   
 # 解題思路  
@@ -32,18 +32,18 @@ https://leetcode.com/problems/surrounded-regions/
 // -------------------------------------------------------------  
 char[][] region =  
 {  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new char[] { 'X', 'X', 'X', 'X'},  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new char[] { 'X', 'O', 'O', 'X'},  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new char[] { 'X', 'X', 'O', 'X'},  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new char[] { 'X', 'O', 'X', 'X'},  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new char[] { 'X', 'X', 'X', 'X' },  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new char[] { 'X', 'O', 'O', 'X' },  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new char[] { 'X', 'X', 'O', 'X' },  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new char[] { 'X', 'O', 'X', 'X' },  
 };  
   
 char[][] answer =  
 {  
-&nbsp;&nbsp;&nbsp;&nbsp;new char[] { 'X', 'X', 'X', 'X'},  
-&nbsp;&nbsp;&nbsp;&nbsp;new char[] { 'X', 'X', 'X', 'X'},  
-&nbsp;&nbsp;&nbsp;&nbsp;new char[] { 'X', 'X', 'X', 'X'},  
-&nbsp;&nbsp;&nbsp;&nbsp;new char[] { 'X', 'O', 'X', 'X'},  
+&nbsp;&nbsp;&nbsp;&nbsp;new char[] { 'X', 'X', 'X', 'X' },  
+&nbsp;&nbsp;&nbsp;&nbsp;new char[] { 'X', 'X', 'X', 'X' },  
+&nbsp;&nbsp;&nbsp;&nbsp;new char[] { 'X', 'X', 'X', 'X' },  
+&nbsp;&nbsp;&nbsp;&nbsp;new char[] { 'X', 'O', 'X', 'X' },  
 };  
   
 unitTest.Solve(region);  
@@ -52,18 +52,18 @@ Assert.AreEqual(true, HasSameContent(region, answer));
 // -------------------------------------------------------------  
 region = new char[][]  
 {  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new char[] { 'O', 'X', 'X', 'X'},  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new char[] { 'X', 'O', 'O', 'X'},  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new char[] { 'X', 'X', 'O', 'X'},  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new char[] { 'X', 'X', 'X', 'O'},  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new char[] { 'O', 'X', 'X', 'X' },  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new char[] { 'X', 'O', 'O', 'X' },  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new char[] { 'X', 'X', 'O', 'X' },  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new char[] { 'X', 'X', 'X', 'O' },  
 };  
   
 answer = new char[][]  
 {  
-&nbsp;&nbsp;&nbsp;&nbsp;new char[] { 'O', 'X', 'X', 'X'},  
-&nbsp;&nbsp;&nbsp;&nbsp;new char[] { 'X', 'X', 'X', 'X'},  
-&nbsp;&nbsp;&nbsp;&nbsp;new char[] { 'X', 'X', 'X', 'X'},  
-&nbsp;&nbsp;&nbsp;&nbsp;new char[] { 'X', 'X', 'X', 'O'},  
+&nbsp;&nbsp;&nbsp;&nbsp;new char[] { 'O', 'X', 'X', 'X' },  
+&nbsp;&nbsp;&nbsp;&nbsp;new char[] { 'X', 'X', 'X', 'X' },  
+&nbsp;&nbsp;&nbsp;&nbsp;new char[] { 'X', 'X', 'X', 'X' },  
+&nbsp;&nbsp;&nbsp;&nbsp;new char[] { 'X', 'X', 'X', 'O' },  
 };  
   
 unitTest.Solve(region);  
