@@ -1,0 +1,40 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace Q152_Maximum_Product_Subarray_
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+
+        public int MaxProduct(int[] nums)
+        {
+            int current_sequence_max = nums[0];
+            int current_sequence_min = nums[0];
+            int answer = nums[0];
+
+            for (int i = 1; i < nums.Length; i++)
+            {
+                // 保存可能令答案產生變化的數
+                List<int> possibleAnswer = new List<int>
+                {
+                    current_sequence_max * nums[i],
+                    current_sequence_min * nums[i],
+                    nums[i],
+                };
+
+                // 考慮子序列中新增的這個數，更新當前子序列的最大與最小連續乘積
+                current_sequence_max = possibleAnswer.Max();
+                current_sequence_min = possibleAnswer.Min();
+
+                // 答案所在的序列中，不一定包含這個數，所以只要有新的數加入就必須嘗試更新答案
+                answer = answer < current_sequence_max ? current_sequence_max : answer;
+            }
+            return answer;
+        }
+    }
+}
