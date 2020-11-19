@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30711.63
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q162(Find Peak Element)", "Q162(Find Peak Element).csproj", "{B3BE01D4-D0DF-4E0C-B1CF-A9F73426BC64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q162(Find Peak Element)Tests", "..\Q162(Find Peak Element)Tests\Q162(Find Peak Element)Tests.csproj", "{B71D7173-30EA-425F-B087-56CD4183DD2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3BE01D4-D0DF-4E0C-B1CF-A9F73426BC64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3BE01D4-D0DF-4E0C-B1CF-A9F73426BC64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3BE01D4-D0DF-4E0C-B1CF-A9F73426BC64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3BE01D4-D0DF-4E0C-B1CF-A9F73426BC64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B71D7173-30EA-425F-B087-56CD4183DD2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B71D7173-30EA-425F-B087-56CD4183DD2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B71D7173-30EA-425F-B087-56CD4183DD2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B71D7173-30EA-425F-B087-56CD4183DD2E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB1842E9-8D86-4483-B410-F9B30DFE8B01}
+	EndGlobalSection
+EndGlobal
