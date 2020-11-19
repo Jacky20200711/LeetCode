@@ -1,0 +1,137 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace Q130_Surrounded_Regions_
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+
+        public class Point
+        {
+            public int Row { get; set; }
+            public int Col { get; set; }
+        }
+
+        public List<List<Point>> GetRegionByBFS(char[][] board, bool[][] visit, Point startPoint, ref bool CanTouchBoundary)
+        {
+            // 儲存起始點
+            List<List<Point>> PointInBFS = new List<List<Point>>
+            {
+                new List<Point> { startPoint }
+            };
+
+            if (startPoint.Row == 0 || startPoint.Row == board.Length - 1 ||
+                startPoint.Col == 0 || startPoint.Col == board[0].Length - 1)
+            {
+                CanTouchBoundary = true;
+            }
+
+            // 從起始點開始BFS
+            while (PointInBFS.Last().Count != 0)
+            {
+                List<Point> previous_round_point = PointInBFS.Last();
+
+                // 準備儲存下一個階段可以向外擴展的點
+                PointInBFS.Add(new List<Point>());
+
+                // 搜尋這一輪可以向外擴展的點
+                foreach (Point point in previous_round_point)
+                {
+                    int i = point.Row - 1;
+                    int j = point.Col;
+
+                    // 測試可否往上
+                    if (i > -1 && !visit[i][j] && board[i][j] == 'O')
+                    {
+                        visit[i][j] = true;
+                        PointInBFS.Last().Add(new Point { Row = i, Col = j });
+                        if (i == 0)
+                            CanTouchBoundary = true;
+                    }
+
+                    // 測試可否往下
+                    i = point.Row + 1;
+                    j = point.Col;
+                    if (i < board.Length && !visit[i][j] && board[i][j] == 'O')
+                    {
+                        visit[i][j] = true;
+                        PointInBFS.Last().Add(new Point { Row = i, Col = j });
+                        if (i == board.Length - 1)
+                            CanTouchBoundary = true;
+                    }
+
+                    // 測試可否往左
+                    i = point.Row;
+                    j = point.Col - 1;
+                    if (j > -1 && !visit[i][j] && board[i][j] == 'O')
+                    {
+                        visit[i][j] = true;
+                        PointInBFS.Last().Add(new Point { Row = i, Col = j });
+                        if (j == 0)
+                            CanTouchBoundary = true;
+                    }
+
+                    // 測試可否往右
+                    i = point.Row;
+                    j = point.Col + 1;
+                    if (j < board[0].Length && !visit[i][j] && board[i][j] == 'O')
+                    {
+                        visit[i][j] = true;
+                        PointInBFS.Last().Add(new Point { Row = i, Col = j });
+                        if (j == board[0].Length - 1)
+                            CanTouchBoundary = true;
+                    }
+                }
+            }
+            return PointInBFS;
+        }
+
+        public void FlipRegion(List<List<Point>> region, char[][] board)
+        {
+            foreach (List<Point> points in region)
+            {
+                foreach (Point point in points)
+                {
+                    board[point.Row][point.Col] = 'X';
+                }
+            }
+        }
+
+        public void Solve(char[][] board)
+        {
+            bool[][] visit = new bool[board.Length][];
+
+            for (int i = 0; i < visit.Length; i++)
+            {
+                visit[i] = new bool[board[0].Length];
+            }
+
+            for (int i = 0; i < board.Length; i++)
+            {
+                for (int j = 0; j < board[0].Length; j++)
+                {
+                    // 搜尋沒有拜訪過的O字元
+                    if (board[i][j] == 'O' && !visit[i][j])
+                    {
+                        bool CanTouchBoundary = false;
+
+                        // 從該字元往外做BFS以取得所屬的整個區域
+                        List<List<Point>> region = GetRegionByBFS(board, visit, new Point { Row = i, Col = j }, ref CanTouchBoundary);
+
+                        // 如果這個區域碰不到邊界，表示被包圍了
+                        if (!CanTouchBoundary)
+                        {
+                            // 修改被包圍區域的字元
+                            FlipRegion(region, board);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
