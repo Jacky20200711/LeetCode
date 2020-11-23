@@ -5,7 +5,7 @@ https://leetcode.com/problems/kth-largest-element-in-an-array/
 我們的任務是: 找出在這個陣列中第K大的數(注意，是找第K大而不是第K個不同的數字)。  
   
 範例1  
-輸入 = { 3, 2, 1, 5, 6, 4 } K = 4  
+輸入 = { 3, 2, 3, 1, 2, 4, 5, 5, 6 } K = 4  
 輸出 = 4  
   
 範例2  
