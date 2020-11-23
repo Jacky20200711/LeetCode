@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q215(Kth Largest Element in an Array)", "Q215(Kth Largest Element in an Array).csproj", "{35F30EF8-3E15-4965-92A9-CC901E2AD584}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q215(Kth Largest Element in an Array)Tests", "..\Q215(Kth Largest Element in an Array)Tests\Q215(Kth Largest Element in an Array)Tests.csproj", "{3C73EA2F-C01D-4338-819B-814233DAE2A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35F30EF8-3E15-4965-92A9-CC901E2AD584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35F30EF8-3E15-4965-92A9-CC901E2AD584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35F30EF8-3E15-4965-92A9-CC901E2AD584}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35F30EF8-3E15-4965-92A9-CC901E2AD584}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C73EA2F-C01D-4338-819B-814233DAE2A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C73EA2F-C01D-4338-819B-814233DAE2A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C73EA2F-C01D-4338-819B-814233DAE2A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C73EA2F-C01D-4338-819B-814233DAE2A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {200083EC-E8EC-4B41-B0DC-D85E7799C3A7}
+	EndGlobalSection
+EndGlobal
