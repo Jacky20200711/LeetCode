@@ -1,8 +1,7 @@
 # 題目網址 & 題目簡述  
 https://leetcode.com/problems/kth-largest-element-in-an-array/  
   
-題目的 Input 為一個整數陣列，以及一個數字K，  
-我們的任務是: 找出在這個陣列中第K大的數(注意，是找第K大而不是第K個不同的數字)。  
+題目的 Input 為一個整數陣列，以及一個數字K，我們的任務是 : 找出陣列中第K大的數。  
   
 範例1:  
 輸入 = { 3, 2, 3, 1, 2, 4, 5, 5, 6 } K = 4  
@@ -13,7 +12,7 @@ https://leetcode.com/problems/kth-largest-element-in-an-array/
 輸出 = -1  
   
 # 解題思路  
-直接將陣列從大到小排序即可輕易取得，超級無敵簡單XD  
+將陣列從大到小排序後，即可輕易取得任意排名的數，超級無敵簡單XD  
   
 # UnitTest 使用的測資  
 Assert.AreEqual(5, unitTest.FindKthLargest(new int[] { 3, 2, 1, 5, 6, 4 }, 2));  

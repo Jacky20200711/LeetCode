@@ -1,7 +1,7 @@
 # 題目網址 & 題目簡述  
 https://leetcode.com/problems/longest-consecutive-sequence/  
   
-題目的 Input 為未排序的一維陣列(只含整數)，我們的任務是 : 取得最長的遞增序列其長度。  
+題目的 Input 為未排序的一維整數陣列，我們的任務是 : 取得最長的遞增序列其長度。  
 ※遞增的意思是相鄰兩數的值只差1  
   
 範例1:  
@@ -13,8 +13,10 @@ https://leetcode.com/problems/longest-consecutive-sequence/
 輸出 = 0  
   
 # 解題思路  
-1.排序  
-2.持續檢查是否遞增，若遞增成功則嘗試更新答案，若遞增中斷則重新累加新的序列長度。  
+將陣列排序後，從頭檢查是否遞增，過程中只要處理三種情況即可  
+1.遇到重複的數則忽略  
+2.若遞增成功則嘗試更新答案  
+3.若遞增中斷則表示遇到新的序列，需要重新累計其長度  
   
 # UnitTest 使用的測資  
 Assert.AreEqual(4, unitTest.LongestConsecutive(new int[] { 100, 4, 200, 1, 3, 2 }));  
