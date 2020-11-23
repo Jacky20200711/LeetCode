@@ -1,0 +1,39 @@
+public class Solution {
+    public int LongestConsecutive(int[] nums)
+    {
+        if (nums.Length == 0)
+            return 0;
+
+        Array.Sort(nums);
+
+        int ans_lcs = 1;
+        int tmp_lcs = 1;
+
+        for (int i = 0; i < nums.Length - 1; i++)
+        {
+            // 忽略重複的數
+            if(nums[i] == nums[i + 1])
+            {
+                continue;
+            }
+
+            // 檢查是否遞增
+            if(nums[i] + 1 == nums[i + 1])
+            {
+                tmp_lcs++;
+
+                if (tmp_lcs > ans_lcs)
+                {
+                    ans_lcs = tmp_lcs;
+                }
+            }
+            else
+            {
+                // 遞增中斷，重新計算LCS 
+                tmp_lcs = 1;
+            }
+        }
+
+        return ans_lcs;
+    }
+}

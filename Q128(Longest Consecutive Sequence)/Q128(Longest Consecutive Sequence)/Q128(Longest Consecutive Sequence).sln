@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q128(Longest Consecutive Sequence)", "Q128(Longest Consecutive Sequence).csproj", "{1083C164-A563-4DA0-9CD1-196A43D1A3C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q128(Longest Consecutive Sequence)Tests", "..\Q128(Longest Consecutive Sequence)Tests\Q128(Longest Consecutive Sequence)Tests.csproj", "{5B9C765D-F00B-4406-A879-2501E2F0365E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1083C164-A563-4DA0-9CD1-196A43D1A3C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1083C164-A563-4DA0-9CD1-196A43D1A3C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1083C164-A563-4DA0-9CD1-196A43D1A3C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1083C164-A563-4DA0-9CD1-196A43D1A3C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B9C765D-F00B-4406-A879-2501E2F0365E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B9C765D-F00B-4406-A879-2501E2F0365E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B9C765D-F00B-4406-A879-2501E2F0365E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B9C765D-F00B-4406-A879-2501E2F0365E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A91AB85-7D6C-414B-B693-DE751DCCB7D8}
+	EndGlobalSection
+EndGlobal
