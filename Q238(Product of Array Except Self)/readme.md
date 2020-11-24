@@ -23,7 +23,7 @@ https://leetcode.com/problems/product-of-array-except-self/
 令 prefix_mul[i] 表示 nums[0] ~ nums[i] 的連續乘積  
 令 postfix_mul[i] 表示 nums[i] ~ nums[nums.length-1] 的連續乘積  
   
-2.接著就可以輕易計算出想要的答案(即位置i之前的元素乘積 * 位置i之後的元素乘積)  
+2.接著就可以輕易取得索引i對應的答案(即位置i之前的連續乘積 * 位置i之後的連續乘積)  
 answer[i] = prefix_mul[i - 1] * postfix_mul[i + 1];  
   
 # UnitTest 使用的測資  
