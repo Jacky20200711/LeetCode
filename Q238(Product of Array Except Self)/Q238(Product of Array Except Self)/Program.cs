@@ -1,0 +1,45 @@
+﻿using System;
+
+namespace Q238_Product_of_Array_Except_Self_
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+
+        public int[] ProductExceptSelf(int[] nums)
+        {
+            int[] prefix_mul = new int[nums.Length];
+            int[] postfix_mul = new int[nums.Length];
+
+            prefix_mul[0] = nums[0];
+            postfix_mul[^1] = nums[^1];
+
+            // 取得所有的前序乘積 
+            // prefix_mul[i] 表示 nums[0] ~ nums[i] 的乘積
+            for (int i = 1; i < nums.Length; i++)
+            {
+                prefix_mul[i] = prefix_mul[i-1] * nums[i];
+            }
+
+            // 取得所有的後序乘積
+            // postfix_mul[i] 表示 nums[i] ~ nums[^1] 的乘積
+            for (int i = nums.Length - 2; i > 0; i--)
+            {
+                postfix_mul[i] = postfix_mul[i+1] * nums[i];
+            }
+
+            nums[0] = postfix_mul[1];
+            nums[^1] = prefix_mul[^2];
+
+            for (int i = 1; i < nums.Length-1; i++)
+            {
+                nums[i] = prefix_mul[i - 1] * postfix_mul[i + 1];
+            }
+
+            return nums;
+        }
+    }
+}
