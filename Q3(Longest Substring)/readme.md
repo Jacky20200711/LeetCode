@@ -14,7 +14,7 @@ https://leetcode.com/problems/longest-substring-without-repeating-characters/
 # 解題思路  
 創建一個 HashTable 來儲存出現過的數字以及該數字最後出現的索引，  
 創建一個變數來儲存當前子字串的左界，  
-創建一個變數來儲存所有子字串的最大長度，  
+創建一個變數來儲存答案，  
 接著，掃描字串並考慮兩種情況即可。  
   
 情況一  
