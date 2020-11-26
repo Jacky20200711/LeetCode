@@ -31,7 +31,7 @@ https://leetcode.com/problems/spiral-matrix/
 如果當前矩形的寬度等於1，則往上走的時候會重複經過之前往下時拜訪過的元素。  
   
 # UnitTest 使用的測資  
-// --------------------------------------------------------------------------------------------  
+// ----------------------------------------------------------------------------------------------  
 matrix = new int[][]{  
 &nbsp;&nbsp;&nbsp;&nbsp;new int[] { 1, 2, 3 },  
 &nbsp;&nbsp;&nbsp;&nbsp;new int[] { 4, 5, 6 },  
@@ -41,7 +41,7 @@ matrix = new int[][]{
 answer = new int[] { 1, 2, 3, 6, 9, 8, 7, 4, 5 };  
   
 Assert.AreEqual(true, Enumerable.SequenceEqual(UnitTest.SpiralOrder(matrix), answer));  
-// --------------------------------------------------------------------------------------------  
+// ----------------------------------------------------------------------------------------------  
 matrix = new int[][]{  
 &nbsp;&nbsp;&nbsp;&nbsp;new int[] { 1, 2, 3, 4 },  
 &nbsp;&nbsp;&nbsp;&nbsp;new int[] { 5, 6, 7, 8 },  
@@ -51,7 +51,7 @@ matrix = new int[][]{
 answer = new int[] { 1, 2, 3, 4, 8, 12, 11, 10, 9, 5, 6, 7 };  
   
 Assert.AreEqual(true, Enumerable.SequenceEqual(UnitTest.SpiralOrder(matrix), answer));  
-// --------------------------------------------------------------------------------------------  
+// ----------------------------------------------------------------------------------------------  
 matrix = new int[][]{  
 &nbsp;&nbsp;&nbsp;&nbsp;new int[] { 1 },  
 };  
@@ -59,7 +59,7 @@ matrix = new int[][]{
 answer = new int[] { 1 };  
   
 Assert.AreEqual(true, Enumerable.SequenceEqual(UnitTest.SpiralOrder(matrix), answer));  
-// --------------------------------------------------------------------------------------------  
+// ----------------------------------------------------------------------------------------------  
 matrix = new int[][]{  
 &nbsp;&nbsp;&nbsp;&nbsp;new int[] { 1, 2 },  
 };  
@@ -67,7 +67,7 @@ matrix = new int[][]{
 answer = new int[] { 1, 2 };  
   
 Assert.AreEqual(true, Enumerable.SequenceEqual(UnitTest.SpiralOrder(matrix), answer));  
-// --------------------------------------------------------------------------------------------  
+// ----------------------------------------------------------------------------------------------  
 matrix = new int[][]{  
 &nbsp;&nbsp;&nbsp;&nbsp;new int[] { 1 },  
 &nbsp;&nbsp;&nbsp;&nbsp;new int[] { 2 },  
@@ -76,7 +76,7 @@ matrix = new int[][]{
 answer = new int[] { 1, 2 };  
   
 Assert.AreEqual(true, Enumerable.SequenceEqual(UnitTest.SpiralOrder(matrix), answer));  
-// --------------------------------------------------------------------------------------------  
+// ----------------------------------------------------------------------------------------------  
   
 # 提交結果  
 ![image](https://raw.githubusercontent.com/Jacky20200711/LeetCode/master/Q54(Spiral%20Matrix)/SuccessShot.PNG)  
