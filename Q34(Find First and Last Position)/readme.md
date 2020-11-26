@@ -1,22 +1,18 @@
 # 題目網址 & 題目簡述  
 https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/  
   
-題目的 Input 為一個排序過的一維陣列，以及一個數字，  
-我們的任務是: 找出這個數字第一次和最後一次出現在陣列的索引。  
+題目的 Input 為排序過的一維陣列，以及一個數字(target)，  
+我們的任務是 : 找出這個數字第一次和最後一次出現在陣列的索引。  
   
-範例輸入1:  
-Array = { 5, 7, 7, 8, 8, 10 } & TargetNumber = 8  
+範例1:  
+輸入 = { 5, 7, 7, 8, 8, 10 } & target = 8  
+輸出 = { 3, 4 }  
   
-範例輸出1:  
-Output = { 3, 4 }  
+範例2:  
+輸入 = { 1, 1, 1, 1, 1 } & target = 1  
+輸出 = { 0, 4 }  
   
-範例輸入2:  
-Array = { 1, 1, 1, 1, 1 } & TargetNumber = 1  
-  
-範例輸出2:  
-Output = { 0, 4 }  
-  
-※ 若 TargetNumber 不在陣列中，則返回 { -1, -1 }  
+※ 若 target 不在陣列中，則返回 { -1, -1 }  
   
 # 解題思路  
 先做一次二分搜尋，假設取得的目標數字索引為X，則將陣列看成兩個部分:  
@@ -30,9 +26,9 @@ Part2.Array[X+1]~陣列最尾端
 重複這個步驟直到找不到目標數字為止，最後X會停在最後一次出現該數字的索引。  
   
 # UnitTest 使用的測資  
-int[] sample = new int[] { 5, 7, 7, 8, 8, 10 };  
-int[] verify = UnitTest.SearchRange(sample, 6);  
-int[] answer = new int[] { -1, -1 };  
+sample = new int[] { 5, 7, 7, 8, 8, 10 };  
+verify = UnitTest.SearchRange(sample, 6);  
+answer = new int[] { -1, -1 };  
 Assert.AreEqual(true, Enumerable.SequenceEqual(verify, answer));  
   
 sample = new int[] { 5, 7, 7, 8, 8, 10 };  
