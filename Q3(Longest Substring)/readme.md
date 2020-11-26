@@ -24,15 +24,15 @@ https://leetcode.com/problems/longest-substring-without-repeating-characters/
 下一輪的子字串 = "a" 左界 = 0  
 下一輪的子字串 = "ab" 左界 = 0  
 下一輪的子字串 = "abc" 左界 = 0  
-下一輪的子字串 = "abca" 發現 'a' 重複出現在子字串，所以左界移動到上次出現 'a' 的右邊一格，即左界 = 1  
+下一輪的子字串 = "bca" 左界 = 1 (因為左界移動到上次出現 'a' 的右邊一格)  
 下一輪的子字串 = "bcad" 左界 = 1  
   
 情況二  
 若當前的字元沒有被包含在之前的子字串，表示當前子字串的長度增加，  
 所以我們要計算當前子字串的長度並檢查是否要更新答案。  
   
-這題有一個好玩的地方，剛開始我用 Dictionary 來當 HashTable，提交後的效率才贏過 30%...  
-但是改用 int[] 來當 HashTable 之後效率卻暴增，看來存取陣列的效能遠高於複雜的物件XD  
+這題有一個好玩的地方，剛開始我用 Dictionary 來當 HashTable，提交後的效率很差...  
+後來改用 int[] 來當 HashTable 之後效率卻暴增，看來存取陣列的效能遠高於複雜的物件XD  
   
 # UnitTest 使用的測資  
 Assert.AreEqual(3, UnitTest.LengthOfLongestSubstring("abcabcbb"));  
