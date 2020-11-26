@@ -1,20 +1,16 @@
 # 題目網址 & 題目簡述  
 https://leetcode.com/problems/search-in-rotated-sorted-array/  
   
-題目的 Input 為一個排序後會以某個轉軸做左右交換的一維陣列，以及一個數字，  
+題目的 Input 為排序後會以某個轉軸做左右交換的一維整數陣列(數字不會重複)，以及一個數字(target)，  
 我們的任務是: 找出這個數字出現在陣列的索引(若該數字不存在則返回-1)。  
   
-範例輸入1:  
-Array = { 4,5,6,7,0,1,2 }、TargetNumber = 0  
+範例1:  
+輸入 = { 4,5,6,7,0,1,2 } & target = 0  
+輸出 = 4  
   
-範例輸出1:  
-Output = 4  
-  
-範例輸入2:  
-Array = { 1 }、TargetNumber = 0  
-  
-範例輸出2:  
-Output = -1  
+範例2:  
+輸入 = { 1 } & target = 0  
+輸出 = -1  
   
 # 解題思路  
 觀察後可以發現，轉軸(pivot)的左右兩邊都會是已排序狀態，  
