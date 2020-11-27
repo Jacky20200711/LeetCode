@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q22(Generate Parentheses)", "Q22(Generate Parentheses).csproj", "{DBF050ED-F5F7-4214-B124-BAD9C38F8582}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q22(Generate Parentheses)Tests", "..\Q22(Generate Parentheses)Tests\Q22(Generate Parentheses)Tests.csproj", "{F9739FFF-9F80-4933-AF76-48EC4B3EF908}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBF050ED-F5F7-4214-B124-BAD9C38F8582}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBF050ED-F5F7-4214-B124-BAD9C38F8582}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBF050ED-F5F7-4214-B124-BAD9C38F8582}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBF050ED-F5F7-4214-B124-BAD9C38F8582}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9739FFF-9F80-4933-AF76-48EC4B3EF908}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9739FFF-9F80-4933-AF76-48EC4B3EF908}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9739FFF-9F80-4933-AF76-48EC4B3EF908}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9739FFF-9F80-4933-AF76-48EC4B3EF908}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {01C3B03D-8974-44C7-8353-651EAE16A2CE}
+	EndGlobalSection
+EndGlobal
