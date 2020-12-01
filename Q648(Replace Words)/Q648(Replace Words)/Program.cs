@@ -1,0 +1,116 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace Q648_Replace_Words_
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+
+        public string ReplaceWords(IList<string> dictionary, string sentence)
+        {
+            Trie trie = new Trie();
+
+            // 建立 Trie & 插入題目給的字串
+            foreach (string key in dictionary)
+            {
+                trie.Insert(key);
+            }
+
+            // 切割題目給的句子
+            string[] SplitStr = sentence.Split();
+
+            // 將切割後的單字一個個丟入 Trie 來測試
+            for(int i = 0; i < SplitStr.Length; i++)
+            {
+                SplitStr[i] = trie.GetShortestMatchingPrefix(SplitStr[i]);
+            }
+           
+            // 將新的單字重新用空白串接
+            return string.Join(" ", SplitStr);
+        }
+
+        public class Trie
+        {
+            // 每個節點都包含 26 個子節點，分別表示對應的小寫字母
+            public class Node
+            {
+                public Node[] ChrPointers { get; set; }
+
+                public bool IsStringEnd { get; set; }
+
+                public Node()
+                {
+                    ChrPointers = new Node[26];
+                    IsStringEnd = false;
+                }
+            }
+
+            private readonly Node rootOfTrie = null;
+
+            public Trie()
+            {
+                rootOfTrie = new Node();
+            }
+
+            public void Insert(string key)
+            {
+                Node CurrentNode = rootOfTrie;
+
+                foreach (char chr in key)
+                {
+                    int ModifyIndex = chr - 97;
+
+                    // 若該字母不存在則建立對應的節點
+                    if (CurrentNode.ChrPointers[ModifyIndex] == null)
+                    {
+                        CurrentNode.ChrPointers[ModifyIndex] = new Node();
+                    }
+
+                    // 將當前的指針移動到下一個節點
+                    CurrentNode = CurrentNode.ChrPointers[ModifyIndex];
+                }
+
+                // 標記字串尾端的節點(若之後要查詢此字串，就是以這個標記作為搜尋的結尾)
+                CurrentNode.IsStringEnd = true;
+            }
+
+            public string GetShortestMatchingPrefix(string word)
+            {
+                Node CurrentNode = rootOfTrie;
+                List<char> ShortestPrefix = new List<char>();
+
+                // 搜尋已儲存的字串中，是否 match 到目標字串的前序
+                foreach (char chr in word)
+                {
+                    int ModifyIndex = chr - 97;
+
+                    if (CurrentNode.ChrPointers[ModifyIndex] != null)
+                    {
+                        // 儲存 match 的字元
+                        ShortestPrefix.Add(chr);
+
+                        // 若這個 match 的字元為某個已儲存字串的尾端，則返回該字串
+                        if (CurrentNode.ChrPointers[ModifyIndex].IsStringEnd)
+                        {
+                            return string.Join("", ShortestPrefix);
+                        }
+
+                        // 將當前的指針移動到下一個節點
+                        CurrentNode = CurrentNode.ChrPointers[ModifyIndex];
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+
+                // 若已儲存的字串皆無法 match 到目標字串的前序，則返回目標字串本身
+                return word;
+            }
+        }
+    }
+}
