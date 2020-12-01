@@ -21,16 +21,16 @@ namespace Q692_Top_K_Frequent_Words_
             }
 
             // 依字典順序(即a~z)取得所有的字串
-            trie.GetAllStrWithFrequcncy();
+            trie.GetAllStrWithFrequency();
 
             // 依照頻率由大到小排序(LINQ的排序為穩定排序，可以保持字典順序)
-            trie.freqStrings = trie.freqStrings.OrderByDescending(s => s.Frequency).ToList();
+            trie.FreqStrings = trie.FreqStrings.OrderByDescending(s => s.Frequency).ToList();
 
             // 取出前k個頻率最高的字串
             IList<string> answer = new List<string>();
             for(int i = 0; i < k; i++)
             {
-                answer.Add(trie.freqStrings[i].Word);
+                answer.Add(trie.FreqStrings[i].Word);
             }
 
             return answer;
@@ -52,7 +52,7 @@ namespace Q692_Top_K_Frequent_Words_
                 }
             }
 
-            // 創建可以包含字串和頻率的類別
+            // 創建可以包含字串和對應頻率的類別
             public class FreqString
             {
                 public string Word { get; set; }
@@ -64,13 +64,13 @@ namespace Q692_Top_K_Frequent_Words_
             private readonly List<char> StrChars = new List<char>(); // 用來儲存路過的字元
 
             // 當抵達某字串尾端時，用來儲存 StrChars 形成的字串  
-            public List<FreqString> freqStrings { get; set; }
+            public List<FreqString> FreqStrings { get; set; }
 
             public Trie()
             {
                 rootOfTrie = new Node();
-                freqStrings = new List<FreqString>();
                 StrChars = new List<char>();
+                FreqStrings = new List<FreqString>();
             }
 
             public void Insert(string word)
@@ -101,7 +101,7 @@ namespace Q692_Top_K_Frequent_Words_
                 // 儲存搜尋到的字串與對應的頻率
                 if (CurrentNode.StrFrequency != 0)
                 {
-                    freqStrings.Add(new FreqString
+                    FreqStrings.Add(new FreqString
                     {
                         Word = string.Join("", StrChars),
                         Frequency = CurrentNode.StrFrequency
@@ -124,7 +124,7 @@ namespace Q692_Top_K_Frequent_Words_
                 }
             }
 
-            public void GetAllStrWithFrequcncy()
+            public void GetAllStrWithFrequency()
             {
                 DFS(rootOfTrie);
             }
