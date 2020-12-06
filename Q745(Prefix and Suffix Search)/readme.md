@@ -69,7 +69,11 @@ words = new string[] { "bird" };
 wordFilter = UnitTest.GetWordFilter(words);  
 Assert.AreEqual(0, wordFilter.F("bird", "bird"));  
   
-words = new string[] { "cabaabaaaa", "ccbcababac", "bacaabccba", "bcbbcbacaa", "abcaccbcaa", "accabaccaa", "cabcbbbcca", "ababccabcb", "caccbbcbab", "bccbacbcba" };  
+words = new string[]  
+{  
+&nbsp;&nbsp;"cabaabaaaa", "ccbcababac", "bacaabccba", "bcbbcbacaa", "abcaccbcaa",  
+&nbsp;&nbsp;"accabaccaa", "cabcbbbcca", "ababccabcb", "caccbbcbab", "bccbacbcba"  
+};  
 wordFilter = UnitTest.GetWordFilter(words);  
 Assert.AreEqual(9, wordFilter.F("bccbacbcba", "a"));  
 Assert.AreEqual(4, wordFilter.F("ab", "abcaccbcaa"));  
