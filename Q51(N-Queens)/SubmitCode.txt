@@ -1,0 +1,111 @@
+public class Solution {
+    public bool IsValidBoard(List<string> OneOfAnswer, int IndexOfSelectRow)
+    {
+        // 由於每個製造的 row 都只會包含一個皇后，所以不需要檢查 row
+
+        // 檢查這個位置的垂直上方是否存在皇后
+        for (int y = 0; y < OneOfAnswer.Count - 1; y++)
+        {
+            if (OneOfAnswer[y][IndexOfSelectRow] != '.')
+            {
+                return false;
+            }
+        }
+
+        // 檢查這個位置向左上延伸的斜線是否存在其他的皇后
+        int i, j;
+        i = OneOfAnswer.Count - 2;
+        j = IndexOfSelectRow - 1;
+        while(i > -1 && j > -1)
+        {
+            if(OneOfAnswer[i--][j--] != '.')
+            {
+                return false;
+            }
+        }
+
+        // 檢查這個位置向右上延伸的斜線是否存在其他的皇后
+        i = OneOfAnswer.Count - 2;
+        j = IndexOfSelectRow + 1;
+        while (i > -1 && j < OneOfAnswer[0].Length)
+        {
+            if (OneOfAnswer[i--][j++] != '.')
+            {
+                return false;
+            }
+        }
+
+        // 由於當前棋盤的下方尚未插入 row 所以不需要檢查左下和右下延伸的斜線
+
+        return true;
+    }
+
+    public void BackTracking(IList<IList<string>> Answer, List<string> OneOfAnswer, List<string> PossibleRow)
+    {
+        // 若放入了 N 個 row 則表示成功找到一組答案
+        if (OneOfAnswer.Count == PossibleRow.Count)
+        {
+            // 注意，若直接 Answer.Add(OneOfAnswer) 則當 OneOfAnswer 有變動則 Answer 的儲存內容也會跟著變動 
+            // 改成將值複製過去而不是存址
+            Answer.Add(new List<string>(OneOfAnswer));
+            return;
+        }
+
+        for (int i = 0; i < PossibleRow.Count; i++)
+        {
+            // 取出一種可能的 row 放入 OneOfAnswer 當前的 row
+            OneOfAnswer.Add(PossibleRow[i]);
+
+            // 若放入後棋盤仍然保持合法，則遞迴搜尋放入這個 row 的所有情況
+            if (IsValidBoard(OneOfAnswer, i))
+            {
+                BackTracking(Answer, OneOfAnswer, PossibleRow);
+            }
+
+            // 取出測試過的 row 並準備測試另一種可能的 row 
+            OneOfAnswer.RemoveAt(OneOfAnswer.Count - 1);
+        }
+    }
+
+    public List<string> GetPossibleRow(int BoardWidth)
+    {
+        // 這個串列用來儲存每一個 row 可能的情況
+        // 假設 N = 4 則 PossibleRow = { "Q...", ".Q..", "..Q.", "...Q" }
+        List<string> PossibleRow = new List<string>();
+
+        // 製造沒有放置皇后的 row
+        char[] GenerateRow = new char[BoardWidth];
+
+        for (int i = 0; i < BoardWidth; i++)
+        {
+            GenerateRow[i] = '.';
+        }
+
+        // 將皇后在這個 row 的每個位置都放一次
+        for (int i = 0; i < BoardWidth; i++)
+        {
+            // 將皇后放在當前位置
+            GenerateRow[i] = 'Q';
+
+            // 儲存皇后放在當前位置的情況
+            PossibleRow.Add(string.Join("", GenerateRow));
+
+            // 將皇后取出當前位置
+            GenerateRow[i] = '.';
+        }
+
+        return PossibleRow;
+    }
+
+    public IList<IList<string>> SolveNQueens(int n)
+    {
+        IList<IList<string>> Answer = new List<IList<string>>();
+
+        List<string> PossibleRow = GetPossibleRow(n);
+        List<string> OneOfAnswer = new List<string>();
+
+        BackTracking(Answer, OneOfAnswer, PossibleRow);
+
+        return Answer;
+    }
+}
