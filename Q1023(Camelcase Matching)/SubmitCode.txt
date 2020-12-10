@@ -1,0 +1,75 @@
+public class Solution {
+    public static List<char> GetStrUpperChar(string Str)
+    {
+        List<char> UpperCharList = new List<char>();
+        foreach (char chr in Str)
+        {
+            // 由於只需要考慮英文字母，所以 < 97 的必定是大寫字母
+            if (chr < 97)
+            {
+                UpperCharList.Add(chr);
+            }
+        }
+        return UpperCharList;
+    }
+    
+    public static bool CompareUpperCharList(List<char> List1, List<char> List2)
+    {
+        if (List1.Count != List2.Count)
+            return false;
+
+        for(int i = 0; i < List1.Count; i++)
+        {
+            if(List1[i] != List2[i])
+            {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    public IList<bool> CamelMatch(string[] queries, string pattern)
+    {
+        IList<bool> QueryResult = new List<bool>();
+
+        // 循序取得 pattern 的大寫字母
+        List<char> UpperCharOfPattern = GetStrUpperChar(pattern);
+
+        // 觀察所有的查詢字串
+        foreach (string query in queries)
+        {
+            // 如果 query 的長度比較短，則 pattern 不可能透過插入字元來變成 query
+            if(query.Length < pattern.Length)
+            {
+                QueryResult.Add(false);
+                continue;
+            }
+
+            // 循序取得 query 的大寫字母
+            List<char> UpperCharOfQuery = GetStrUpperChar(query);
+
+            // 如果兩者的大寫字母不一樣多，或是出現順序不一樣，則 pattern 不可能透過插入小寫來變成 query
+            if (!CompareUpperCharList(UpperCharOfPattern, UpperCharOfQuery))
+            {
+                QueryResult.Add(false);
+                continue;
+            }
+
+            // 在 query 內循序匹配 pattern 的字元
+            int index = 0;
+            for (int i = 0; i < query.Length && index < pattern.Length; i++)
+            {
+                if (query[i] == pattern[index])
+                {
+                    index++;
+                }
+            }
+
+            // 檢查匹配成功的字元數量
+            QueryResult.Add(index == pattern.Length ? true : false);
+        }
+
+        return QueryResult;
+    }
+}
