@@ -34,7 +34,7 @@ https://leetcode.com/problems/n-queens/
   
 # 解題思路  
 首先，製造並保存每一個 row 可能的情況，  
-假設 N = 4，則 PossibleRow = { "Q...", ".Q..", "..Q.", "...Q"}  
+假設 N = 4，則 PossibleRow = { "Q...", ".Q..", "..Q.", "...Q" }  
   
 然後，使用 BackTracking 將所有可能的情況插入到棋盤的每一列，實作的大概流程如下  
 1.在棋盤第 X 列插入 PossibleRow 的其中一種情況  
