@@ -1,9 +1,6 @@
 # 題目網址 & 題目簡述  
 https://leetcode.com/problems/prefix-and-suffix-search/  
   
-這題沒有直接的 input 與 output，而是要實作一個叫做 WordFilter 的類別，  
-我們的任務是 : 令這個類別可以儲存大量字串，並且快速找出能夠同時符合 prefix 和 suffix 的字串。  
-  
 這題沒有直接的 input 與 output，而是需要實作一個叫做 WordFilter 的類別，其任務如下  
 1.儲存大量的字串  
 2.速找出能夠同時符合 prefix 和 suffix 的字串(若有很多，關注索引最大的那個即可)  
