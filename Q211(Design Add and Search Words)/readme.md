@@ -4,7 +4,7 @@ https://leetcode.com/problems/design-add-and-search-words-data-structure/
 這題沒有直接的 input 與 output，而是需要實作一個叫做 WordDictionary 的類別，其任務如下  
 1.儲存大量的字串  
 2.判斷已儲存的字串中是否包含欲搜尋的字串  
-※需要考慮的字元只有英文小寫  
+※需要考慮的字元只有英文小寫與萬用字元(小數點)  
   
 # 解題思路  
 這題是 Trie 的延伸題型，所以在解這一題之前，建議要先解過 Trie 的基本題(連結如下)  
