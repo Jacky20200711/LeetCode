@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q1032(Stream of Characters)", "Q1032(Stream of Characters).csproj", "{787D0186-2A06-4776-A65C-97DC4865DEB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q1032(Stream of Characters)Tests", "..\Q1032(Stream of Characters)Tests\Q1032(Stream of Characters)Tests.csproj", "{5B6D9827-324F-4505-8685-CD9CC1E070F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{787D0186-2A06-4776-A65C-97DC4865DEB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{787D0186-2A06-4776-A65C-97DC4865DEB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{787D0186-2A06-4776-A65C-97DC4865DEB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{787D0186-2A06-4776-A65C-97DC4865DEB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B6D9827-324F-4505-8685-CD9CC1E070F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B6D9827-324F-4505-8685-CD9CC1E070F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B6D9827-324F-4505-8685-CD9CC1E070F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B6D9827-324F-4505-8685-CD9CC1E070F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8853AB19-5D23-4C7B-88ED-0CF29ED557CA}
+	EndGlobalSection
+EndGlobal
