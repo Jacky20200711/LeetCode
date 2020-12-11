@@ -18,7 +18,7 @@ https://leetcode.com/problems/n-queens-ii/
 輸出 = 2  
   
 # 解題思路  
-這一題雖然名稱為 N-Queens II，但卻是 Q51(N-Queens) (連結如下) 的簡化題型  
+這一題雖然名稱為 N-Queens II，但卻是 Q51(N-Queens) 的簡化題型(連結如下)  
 https://github.com/Jacky20200711/LeetCode/tree/master/Q51(N-Queens)  
   
 在 Q51(N-Queens) 中，我們需要製造出所有合法的放置情況，  
