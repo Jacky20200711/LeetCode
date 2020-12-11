@@ -4,10 +4,10 @@ https://leetcode.com/problems/prefix-and-suffix-search/
 這題沒有直接的 input 與 output，而是要實作一個叫做 WordFilter 的類別，  
 我們的任務是 : 令這個類別可以儲存大量字串，並且快速找出能夠同時符合 prefix 和 suffix 的字串。  
   
-注意事項:  
-1.字串只會包含英文小寫  
-2.在儲存所有的字串之後，欲查詢的 prefix 和 suffix 會有很多組，所以必須注重查詢的效率  
-3.若符合的字串很多則必須取索引最大的那個並返回其索引，若都不符合則返回 -1  
+這題沒有直接的 input 與 output，而是需要實作一個叫做 WordFilter 的類別，其任務如下  
+1.儲存大量的字串  
+2.速找出能夠同時符合 prefix 和 suffix 的字串(若有很多，關注索引最大的那個即可)  
+※需要考慮的字元只有英文小寫  
   
 範例1:  
 字串 = { "apple", "applee", "appleee" }  
