@@ -21,10 +21,10 @@ https://leetcode.com/problems/prefix-and-suffix-search/
 https://github.com/Jacky20200711/LeetCode/tree/master/Q208(Implement%20Trie)  
   
 這一題最直覺的解法是將所有的字串都拿去做 prefix 和 suffix 的匹配，  
-其查詢期間的時間複雜度 = 字串數量 * (len_prefix + len_suffix)  
+其查詢期間的時間複雜度 = 字串數量 * (prefix.length + suffix.length)  
   
 如果使用 Trie 先將符合 prefix 的字串全部抓出來再分別比對 suffix  
-其查詢期間的時間複雜度 = (符合 prefix 的字串數量) * (len_suffix)  
+其查詢期間的時間複雜度 = (符合 prefix 的字串數量) * (suffix.length)  
   
 可以看出如果符合 prefix 的字串數量很少，那麼使用 Trie 的查詢效率將會壓倒性勝出，  
 就算所有的字串都能夠符合，其效率依然略勝，所以這一題應該要用 Trie 來解。  
