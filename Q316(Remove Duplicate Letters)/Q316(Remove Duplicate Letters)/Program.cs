@@ -1,0 +1,72 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace Q316_Remove_Duplicate_Letters_
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+
+        public string RemoveDuplicateLetters(string s)
+        {
+            int[] Frequency = new int[26];
+            bool[] IsVisited = new bool[26];
+            
+            // 初始化布林陣列
+            for(int i = 0; i < 26; i++)
+            {
+                IsVisited[i] = false;
+            }
+
+            // 累加各個字母的出現頻率
+            int numOfDiffChar = 0;
+            foreach (char c in s)
+            {
+                // 這段代碼用來追蹤新字元，若有新字元出現則遞增
+                int index = c - 97;
+                if(Frequency[index] == 0)
+                {
+                    numOfDiffChar++;
+                }
+
+                Frequency[index]++;
+            }
+
+            // 依照新字元的數量來創建用來儲存答案的字元陣列
+            char[] Answer = new char[numOfDiffChar];
+            int IndexOfEnd = 0;
+
+            // 加入第1個字元 & 更新頻率和拜訪標記
+            Answer[IndexOfEnd] = s[0];
+            Frequency[s[0] - 97]--;
+            IsVisited[s[0] - 97] = true;
+
+            // 從第2個字元開始掃描字串
+            for (int i = 1; i < s.Length; i++)
+            {
+                // 取得當前字元X對應的索引 & 遞減出現頻率
+                int index = s[i] - 97;
+                Frequency[index]--;
+
+                if (!IsVisited[index])
+                {
+                    // 若X比當前答案的最後一個字元Y小，且Y之後還會再度出現，則取出Y
+                    while (IndexOfEnd > -1 && s[i] < Answer[IndexOfEnd] && Frequency[Answer[IndexOfEnd] - 97] != 0)
+                    {
+                        IsVisited[Answer[IndexOfEnd] - 97] = false;
+                        IndexOfEnd--;
+                    }
+
+                    // 將X添加到答案尾端
+                    IsVisited[index] = true;
+                    Answer[++IndexOfEnd] = s[i];
+                }
+            }
+            
+            return string.Join("", Answer);
+        }
+    }
+}
