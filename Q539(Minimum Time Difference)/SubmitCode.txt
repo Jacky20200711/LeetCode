@@ -1,0 +1,59 @@
+public class Solution {
+    public int GetDiffMinute(int T1, int T2)
+    {
+        int diff = T1 - T2;
+
+        // 若計算後大於12小時(720分鐘)則反向計算，取得比較小的時間差
+        return diff < 721 ? diff : 1440 - diff;
+    }
+
+    public int FindMinDifference(IList<string> timePoints)
+    {
+        // 合法的時間格式只有1440種，若超過1440就表示有重複的時間出現，其最小時間差必為0
+        if (timePoints.Count > 1440)
+        {
+            return 0;
+        }
+
+        // 將時間映射到索引(相當於對時間做排序)
+        int[] TimeArray = new int[1441];
+        int firstTime = 1441;
+        int lastTime = -1;
+
+        for (int i = 0; i < timePoints.Count; i++)
+        {
+            string[] TimeSplit = timePoints[i].Split(':');
+            int MappingIndex = Convert.ToInt32(TimeSplit[0]) * 60 + Convert.ToInt32(TimeSplit[1]);
+
+            // 若出現重複的時間則提前結束任務
+            if (TimeArray[MappingIndex] != 0)
+            {
+                return 0;
+            }
+
+            TimeArray[MappingIndex] = 1;
+
+            // 追蹤最小時間與最大時間的出現位置
+            firstTime = firstTime < MappingIndex ? firstTime : MappingIndex;
+            lastTime = lastTime > MappingIndex ? lastTime : MappingIndex;
+        }
+
+        // 排序後，答案必定出現在相鄰的兩個時間點
+        // 但也可能是頭尾相減(例如 00:00 00:05 23:59)
+        int minDiff = GetDiffMinute(lastTime, firstTime);
+
+        int prevTime = firstTime;
+
+        for (int currTime = firstTime + 1; currTime < lastTime + 1; currTime++)
+        {
+            if (TimeArray[currTime] == 1)
+            {
+                int diff = GetDiffMinute(currTime, prevTime);
+                minDiff = minDiff < diff ? minDiff : diff;
+                prevTime = currTime;
+            }
+        }
+
+        return minDiff;
+    }
+}
